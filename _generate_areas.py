@@ -216,7 +216,7 @@ svg { display: block; }
 .nav__inner { max-width: var(--container); margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 @media (min-width: 768px) { .nav__inner { padding: 18px 32px; } }
 .brand { display: flex; align-items: center; gap: 12px; }
-.brand__logo { height: 44px; width: auto; display: block; }
+.brand__logo { height: 88px; width: auto; display: block; }
 
 .brand__text { display: flex; flex-direction: column; line-height: 1.05; }
 .brand__name { font-family: var(--font-display); font-weight: 800; font-size: 22px; letter-spacing: -0.02em; }
