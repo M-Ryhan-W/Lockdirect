@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#E11D2A">
+<meta name="robots" content="noindex, follow">
+<title>Terms of Service — LockDirect</title>
+<meta name="description" content="The terms on which LockDirect Dispatch Ltd provides emergency locksmith dispatch across Greater Manchester.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --red: #E11D2A; --red-bright: #FF2A3A; --red-soft: #FEF2F3;
+  --ink: #0A0E1A; --ink-soft: #1E2433; --text: #475569; --text-soft: #64748B; --text-muted: #94A3B8;
+  --bg: #FFFFFF; --bg-soft: #F8FAFC; --bg-mid: #F1F5F9; --border: #E2E8F0;
+  --container: 1240px;
+  --r-md: 16px; --r-lg: 22px; --r-xl: 30px; --r-full: 9999px;
+  --shadow-red: 0 12px 34px rgba(225,29,42,0.38);
+  --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); color: var(--ink); background: var(--bg); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: var(--red); text-decoration: none; }
+a:hover { text-decoration: underline; }
+svg { display: block; }
+
+.container { max-width: var(--container); margin: 0 auto; padding: 0 24px; }
+@media (min-width: 768px) { .container { padding: 0 32px; } }
+
+.nav { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,0.92); backdrop-filter: saturate(180%) blur(14px); -webkit-backdrop-filter: saturate(180%) blur(14px); border-bottom: 1px solid rgba(226,232,240,0.7); }
+.nav__inner { max-width: var(--container); margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+@media (min-width: 768px) { .nav__inner { padding: 18px 32px; } }
+.brand { display: flex; align-items: center; gap: 12px; color: var(--ink); }
+.brand:hover { text-decoration: none; }
+.brand__logo { height: 44px; width: auto; display: block; }
+
+.brand__text { display: flex; flex-direction: column; line-height: 1.05; }
+.brand__name { font-family: var(--font-display); font-weight: 800; font-size: 22px; letter-spacing: -0.02em; }
+.brand__sub { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted); font-weight: 600; margin-top: 2px; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 24px; border-radius: var(--r-full); font-weight: 700; font-size: 15px; letter-spacing: -0.01em; white-space: nowrap; transition: transform 0.2s; text-decoration: none; }
+.btn:hover { text-decoration: none; transform: translateY(-1px); }
+.btn svg { width: 18px; height: 18px; }
+.btn--primary { background: linear-gradient(135deg, var(--red), var(--red-bright)); color: white; box-shadow: var(--shadow-red); }
+
+.legal-hero { padding: 36px 0 16px; border-bottom: 1px solid var(--border); background: var(--bg-soft); }
+.legal-hero__inner { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+.legal-hero .kicker { display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--red); margin-bottom: 12px; }
+.legal-hero h1 { font-family: var(--font-display); font-weight: 800; font-size: clamp(36px, 5vw, 56px); line-height: 1.02; letter-spacing: -0.03em; margin-bottom: 12px; font-variation-settings: "opsz" 96; }
+.legal-hero__meta { font-size: 14px; color: var(--text-soft); margin-bottom: 28px; display: flex; gap: 16px; flex-wrap: wrap; }
+.legal-hero__meta strong { color: var(--ink); font-weight: 700; }
+
+.legal-body { padding: 48px 0 80px; }
+.legal-body__inner { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+.legal-body h2 { font-family: var(--font-display); font-weight: 700; font-size: clamp(22px, 3vw, 28px); letter-spacing: -0.02em; margin: 40px 0 14px; line-height: 1.15; color: var(--ink); }
+.legal-body h2:first-of-type { margin-top: 0; }
+.legal-body h3 { font-family: var(--font-display); font-weight: 700; font-size: 18px; letter-spacing: -0.015em; margin: 24px 0 8px; }
+.legal-body p { color: var(--text); font-size: 16px; line-height: 1.7; margin-bottom: 14px; }
+.legal-body p strong { color: var(--ink); font-weight: 700; }
+.legal-body ul, .legal-body ol { padding-left: 24px; margin: 0 0 18px; }
+.legal-body li { color: var(--text); font-size: 16px; line-height: 1.7; margin-bottom: 8px; }
+.legal-body li::marker { color: var(--red); }
+
+.callout { padding: 20px 22px; background: var(--red-soft); border-left: 4px solid var(--red); border-radius: var(--r-md); margin: 22px 0; }
+.callout p { color: var(--ink-soft); margin: 0; font-size: 15px; }
+.callout p strong { color: var(--ink); }
+
+.contact-block { padding: 24px; background: var(--bg-mid); border-radius: var(--r-lg); margin-top: 32px; }
+.contact-block strong { display: block; font-family: var(--font-display); font-size: 18px; margin-bottom: 6px; color: var(--ink); }
+
+.footer-mini { background: var(--bg-soft); border-top: 1px solid var(--border); padding: 28px 0; text-align: center; font-size: 13px; color: var(--text-soft); }
+.footer-mini a { color: var(--ink-soft); margin: 0 8px; }
+.footer-mini a:hover { color: var(--red); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="brand">
+      <img src="assets/lockdirect-logo.png" alt="LockDirect" class="brand__logo">
+      <div class="brand__text">
+        <span class="brand__sub">Manchester · 24/7</span>
+      </div>
+    </a>
+    <a href="tel:07760587095" class="btn btn--primary">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Call Now
+    </a>
+  </div>
+</header>
+
+<section class="legal-hero">
+  <div class="legal-hero__inner">
+    <span class="kicker">Terms</span>
+    <h1>Terms of Service</h1>
+    <div class="legal-hero__meta">
+      <span><strong>Last updated:</strong> 21 May 2026</span>
+      <span><strong>Operator:</strong> LockDirect Dispatch Ltd</span>
+    </div>
+  </div>
+</section>
+
+<section class="legal-body">
+  <div class="legal-body__inner">
+
+<h2>1. About these terms</h2>
+<p>These terms govern your use of <strong>lockdirect.co.uk</strong> and the locksmith dispatch service provided by LockDirect Dispatch Ltd. By calling us, submitting the dispatch form, or instructing one of our network engineers to carry out work, you agree to these terms.</p>
+
+<h2>2. What we do</h2>
+<p>LockDirect is a <strong>dispatch service</strong>. We connect customers needing emergency or scheduled locksmith work with vetted, DBS-checked locksmiths operating across Greater Manchester. We are not a single locksmith — we coordinate a network of independent specialists.</p>
+<div class="callout">
+  <p>This distinction matters: the locksmith who arrives at your address is your direct contractor for the work itself. LockDirect is responsible for vetting and dispatching them, and we stand behind the 12-month workmanship guarantee.</p>
+</div>
+
+<h2>3. Pricing and quotes</h2>
+<p>We provide indicative pricing on our website (<strong>house lockouts from £79, car lockouts from £89, lock changes from £99</strong>). The exact price for your specific job will be quoted to you on the phone <strong>before</strong> we dispatch an engineer.</p>
+<p>The quote you accept on the phone is the price you pay. We never charge a call-out fee on top of the agreed price, and we do not add "while we're here" upsells without a clear, separate agreement.</p>
+<p>If on arrival the engineer finds the job is materially different from what was described (e.g. you described a standard cylinder lockout but the door has been damaged in a forced entry attempt), they will give you a revised quote in writing before doing further work. You're free to decline.</p>
+
+<h2>4. Payment</h2>
+<p>Payment is taken <strong>after</strong> the work is completed. We accept:</p>
+<ul>
+  <li>Card payment (contactless / chip &amp; PIN)</li>
+  <li>Cash</li>
+  <li>Bank transfer</li>
+</ul>
+<p>VAT receipts are available on request. Where you are claiming through home insurance, we provide itemised invoices suitable for most UK insurers.</p>
+
+<h2>5. Guarantee</h2>
+<p>All parts supplied and workmanship provided are covered by a <strong>12-month guarantee</strong>. If something we installed or repaired fails within 12 months due to a fault in the part or our work, we will return and fix it at no charge.</p>
+<p>The guarantee does not cover:</p>
+<ul>
+  <li>Damage caused by misuse, attempted forced entry, or modification by a third party</li>
+  <li>Wear-and-tear consistent with normal use</li>
+  <li>Parts you supplied yourself for us to fit</li>
+</ul>
+
+<h2>6. Cancellation</h2>
+<p>You can cancel a dispatched job free of charge until the engineer arrives at your location. Once the engineer is on-site, a minimum call-out charge of £45 applies if you cancel before work begins.</p>
+<p>If we cancel a dispatched job (e.g. weather conditions, engineer accident) we'll let you know as soon as possible and won't charge you anything.</p>
+
+<h2>7. Liability</h2>
+<p>To the maximum extent permitted by law:</p>
+<ul>
+  <li>Our total liability for any single job is limited to the price paid for that job.</li>
+  <li>We are not liable for indirect losses (e.g. business interruption, missed appointments, alternative accommodation) unless they were specifically agreed in advance and in writing.</li>
+  <li>Nothing in these terms limits liability for death or personal injury caused by negligence, or for fraud or fraudulent misrepresentation.</li>
+</ul>
+<p>The locksmith arriving at your address carries their own public-liability insurance for the work they do. Details available on request.</p>
+
+<h2>8. Complaints</h2>
+<p>If you're not happy with the work, please tell us within <strong>14 days</strong> so we can investigate and put things right. Email or call using the details below — we aim to respond within 48 hours.</p>
+<p>If we can't resolve it between us, you may be able to refer the matter to your local Trading Standards office.</p>
+
+<h2>9. Governing law</h2>
+<p>These terms are governed by the laws of <strong>England and Wales</strong>, and any disputes will be subject to the exclusive jurisdiction of the English courts.</p>
+
+<h2>10. Changes to these terms</h2>
+<p>We may update these terms occasionally to reflect changes in our service or the law. The "Last updated" date at the top will reflect the most recent change. Continued use of our service after a change means you accept the new terms.</p>
+
+<div class="contact-block">
+  <strong>Contact us</strong>
+  Phone: <a href="tel:07760587095">07760 587095</a><br>
+  Post: LockDirect Dispatch Ltd, Manchester, United Kingdom<br>
+  Or use the form on our <a href="index.html">homepage</a>.
+</div>
+
+  </div>
+</section>
+
+<footer class="footer-mini">
+  <div class="container">
+    <p>© 2026 LockDirect Dispatch Ltd. · <a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="cookies.html">Cookies</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

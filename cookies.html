@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#E11D2A">
+<meta name="robots" content="noindex, follow">
+<title>Cookie Policy — LockDirect</title>
+<meta name="description" content="The (very small) set of cookies and third-party resources used by the LockDirect website.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --red: #E11D2A; --red-bright: #FF2A3A; --red-soft: #FEF2F3;
+  --ink: #0A0E1A; --ink-soft: #1E2433; --text: #475569; --text-soft: #64748B; --text-muted: #94A3B8;
+  --bg: #FFFFFF; --bg-soft: #F8FAFC; --bg-mid: #F1F5F9; --border: #E2E8F0;
+  --container: 1240px;
+  --r-md: 16px; --r-lg: 22px; --r-xl: 30px; --r-full: 9999px;
+  --shadow-red: 0 12px 34px rgba(225,29,42,0.38);
+  --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); color: var(--ink); background: var(--bg); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: var(--red); text-decoration: none; }
+a:hover { text-decoration: underline; }
+svg { display: block; }
+
+.container { max-width: var(--container); margin: 0 auto; padding: 0 24px; }
+@media (min-width: 768px) { .container { padding: 0 32px; } }
+
+.nav { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,0.92); backdrop-filter: saturate(180%) blur(14px); -webkit-backdrop-filter: saturate(180%) blur(14px); border-bottom: 1px solid rgba(226,232,240,0.7); }
+.nav__inner { max-width: var(--container); margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+@media (min-width: 768px) { .nav__inner { padding: 18px 32px; } }
+.brand { display: flex; align-items: center; gap: 12px; color: var(--ink); }
+.brand:hover { text-decoration: none; }
+.brand__logo { height: 44px; width: auto; display: block; }
+
+.brand__text { display: flex; flex-direction: column; line-height: 1.05; }
+.brand__name { font-family: var(--font-display); font-weight: 800; font-size: 22px; letter-spacing: -0.02em; }
+.brand__sub { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted); font-weight: 600; margin-top: 2px; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 24px; border-radius: var(--r-full); font-weight: 700; font-size: 15px; letter-spacing: -0.01em; white-space: nowrap; transition: transform 0.2s; text-decoration: none; }
+.btn:hover { text-decoration: none; transform: translateY(-1px); }
+.btn svg { width: 18px; height: 18px; }
+.btn--primary { background: linear-gradient(135deg, var(--red), var(--red-bright)); color: white; box-shadow: var(--shadow-red); }
+
+.legal-hero { padding: 36px 0 16px; border-bottom: 1px solid var(--border); background: var(--bg-soft); }
+.legal-hero__inner { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+.legal-hero .kicker { display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--red); margin-bottom: 12px; }
+.legal-hero h1 { font-family: var(--font-display); font-weight: 800; font-size: clamp(36px, 5vw, 56px); line-height: 1.02; letter-spacing: -0.03em; margin-bottom: 12px; font-variation-settings: "opsz" 96; }
+.legal-hero__meta { font-size: 14px; color: var(--text-soft); margin-bottom: 28px; display: flex; gap: 16px; flex-wrap: wrap; }
+.legal-hero__meta strong { color: var(--ink); font-weight: 700; }
+
+.legal-body { padding: 48px 0 80px; }
+.legal-body__inner { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+.legal-body h2 { font-family: var(--font-display); font-weight: 700; font-size: clamp(22px, 3vw, 28px); letter-spacing: -0.02em; margin: 40px 0 14px; line-height: 1.15; color: var(--ink); }
+.legal-body h2:first-of-type { margin-top: 0; }
+.legal-body p { color: var(--text); font-size: 16px; line-height: 1.7; margin-bottom: 14px; }
+.legal-body p strong { color: var(--ink); font-weight: 700; }
+.legal-body ul, .legal-body ol { padding-left: 24px; margin: 0 0 18px; }
+.legal-body li { color: var(--text); font-size: 16px; line-height: 1.7; margin-bottom: 8px; }
+.legal-body li::marker { color: var(--red); }
+
+.cookie-table { width: 100%; margin: 18px 0 26px; border-collapse: collapse; font-size: 14.5px; }
+.cookie-table th { text-align: left; padding: 12px 14px; background: var(--bg-mid); color: var(--ink); font-family: var(--font-display); font-weight: 700; letter-spacing: -0.01em; border-bottom: 1.5px solid var(--border); }
+.cookie-table th:first-child { border-top-left-radius: var(--r-md); }
+.cookie-table th:last-child { border-top-right-radius: var(--r-md); }
+.cookie-table td { padding: 14px; border-bottom: 1px solid var(--border); vertical-align: top; color: var(--text); }
+.cookie-table td strong { color: var(--ink); font-weight: 700; }
+
+.callout { padding: 20px 22px; background: var(--red-soft); border-left: 4px solid var(--red); border-radius: var(--r-md); margin: 22px 0; }
+.callout p { color: var(--ink-soft); margin: 0; font-size: 15px; }
+.callout p strong { color: var(--ink); }
+
+.contact-block { padding: 24px; background: var(--bg-mid); border-radius: var(--r-lg); margin-top: 32px; }
+.contact-block strong { display: block; font-family: var(--font-display); font-size: 18px; margin-bottom: 6px; color: var(--ink); }
+
+.footer-mini { background: var(--bg-soft); border-top: 1px solid var(--border); padding: 28px 0; text-align: center; font-size: 13px; color: var(--text-soft); }
+.footer-mini a { color: var(--ink-soft); margin: 0 8px; }
+.footer-mini a:hover { color: var(--red); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="brand">
+      <img src="assets/lockdirect-logo.png" alt="LockDirect" class="brand__logo">
+      <div class="brand__text">
+        <span class="brand__sub">Manchester · 24/7</span>
+      </div>
+    </a>
+    <a href="tel:07760587095" class="btn btn--primary">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Call Now
+    </a>
+  </div>
+</header>
+
+<section class="legal-hero">
+  <div class="legal-hero__inner">
+    <span class="kicker">Cookies</span>
+    <h1>Cookie Policy</h1>
+    <div class="legal-hero__meta">
+      <span><strong>Last updated:</strong> 21 May 2026</span>
+    </div>
+  </div>
+</section>
+
+<section class="legal-body">
+  <div class="legal-body__inner">
+
+<h2>The short version</h2>
+<p>This site keeps cookie use to an absolute minimum. We don't track you with advertising cookies. We don't build profiles. We don't sell your data to anyone.</p>
+
+<div class="callout">
+  <p><strong>If all you want to know:</strong> we use essential cookies needed for the site to function (none collect personal data), and we load a small number of third-party resources (Google Fonts and OpenStreetMap embed) which set their own cookies under their own terms.</p>
+</div>
+
+<h2>What's a cookie?</h2>
+<p>A cookie is a small text file that a website asks your browser to store on your device. It can be used to remember you between visits, keep you signed in, or track usage. There are also "local storage" entries (a similar concept used by modern web apps).</p>
+
+<h2>Cookies set by this site</h2>
+<p>The LockDirect website itself sets the following:</p>
+
+<table class="cookie-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Purpose</th>
+      <th>Expires</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>None at present.</strong></td>
+      <td>—</td>
+      <td>The site is presently fully static and does not set any first-party cookies.</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If we add features that require first-party cookies in the future (e.g. saving form progress between visits), we'll list them here.</p>
+
+<h2>Third-party resources loaded by this site</h2>
+<p>To keep the site fast and lightweight, we load a few resources from external services. These services may set their own cookies under their own terms:</p>
+
+<table class="cookie-table">
+  <thead>
+    <tr>
+      <th>Provider</th>
+      <th>What it does</th>
+      <th>Policy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Google Fonts</strong></td>
+      <td>Serves the typefaces used across the site (Bricolage Grotesque, Plus Jakarta Sans).</td>
+      <td><a href="https://policies.google.com/privacy" rel="noopener" target="_blank">policies.google.com/privacy</a></td>
+    </tr>
+    <tr>
+      <td><strong>OpenStreetMap</strong></td>
+      <td>Loads the interactive map on each area page (e.g. the Manchester or Stockport page).</td>
+      <td><a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" rel="noopener" target="_blank">OSM privacy policy</a></td>
+    </tr>
+    <tr>
+      <td><strong>Unsplash</strong></td>
+      <td>Provides the placeholder photos used in the "On the job" section of the homepage.</td>
+      <td><a href="https://unsplash.com/privacy" rel="noopener" target="_blank">unsplash.com/privacy</a></td>
+    </tr>
+    <tr>
+      <td><strong>Web3Forms</strong></td>
+      <td>Receives lead submissions from the dispatch form and forwards them to our inbox.</td>
+      <td><a href="https://web3forms.com/privacy-policy" rel="noopener" target="_blank">web3forms.com/privacy-policy</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Managing cookies</h2>
+<p>You can manage and delete cookies through your browser's settings:</p>
+<ul>
+  <li><strong>Chrome:</strong> Settings → Privacy and security → Cookies and other site data</li>
+  <li><strong>Safari:</strong> Settings → Privacy → Manage Website Data</li>
+  <li><strong>Firefox:</strong> Settings → Privacy &amp; Security → Cookies and Site Data</li>
+  <li><strong>Edge:</strong> Settings → Cookies and site permissions</li>
+</ul>
+<p>Blocking all third-party cookies and resources should not break this site's core function (you can still submit the dispatch form and call us), but maps and fonts may not display.</p>
+
+<h2>Changes to this policy</h2>
+<p>If we add any features that change how cookies are used, we'll update this page and the "Last updated" date at the top.</p>
+
+<div class="contact-block">
+  <strong>Questions?</strong>
+  Phone: <a href="tel:07760587095">07760 587095</a><br>
+  Or read our full <a href="privacy.html">Privacy Policy</a>.
+</div>
+
+  </div>
+</section>
+
+<footer class="footer-mini">
+  <div class="container">
+    <p>© 2026 LockDirect Dispatch Ltd. · <a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

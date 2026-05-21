@@ -1,0 +1,3686 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#E11D2A">
+<title>LockDirect — 24/7 Emergency Locksmith Manchester | Locked Out? Help Fast.</title>
+<meta name="description" content="Locked out in Manchester? LockDirect dispatches DBS-checked emergency locksmiths across Greater Manchester. 30-60 min response. No call-out fee. Call 07760 587095.">
+
+<meta property="og:title" content="LockDirect — 24/7 Emergency Locksmith Manchester">
+<meta property="og:description" content="Locked out? We dispatch the nearest available locksmith across Greater Manchester. 30-60 min average response.">
+<meta property="og:type" content="website">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "LockDirect",
+  "telephone": "+447760587095",
+  "priceRange": "££",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Manchester",
+    "addressRegion": "Greater Manchester",
+    "addressCountry": "GB"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  }],
+  "areaServed": [
+    {"@type":"City","name":"Manchester"},
+    {"@type":"City","name":"Salford"},
+    {"@type":"City","name":"Stockport"},
+    {"@type":"City","name":"Oldham"},
+    {"@type":"City","name":"Bury"},
+    {"@type":"City","name":"Bolton"}
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --red: #E11D2A;
+  --red-bright: #FF2A3A;
+  --red-dark: #B91320;
+  --red-glow: rgba(225, 29, 42, 0.14);
+  --red-soft: #FEF2F3;
+  --green: #16A34A;
+  --green-bright: #22C55E;
+  --whatsapp: #25D366;
+  --whatsapp-dark: #1FB55C;
+  --amber: #F59E0B;
+
+  --ink: #0A0E1A;
+  --ink-soft: #1E2433;
+  --text: #475569;
+  --text-soft: #64748B;
+  --text-muted: #94A3B8;
+
+  --bg: #FFFFFF;
+  --bg-soft: #F8FAFC;
+  --bg-mid: #F1F5F9;
+  --bg-warm: #FDFBF8;
+  --border: #E2E8F0;
+  --border-strong: #CBD5E1;
+
+  --container: 1240px;
+
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 22px;
+  --r-xl: 30px;
+  --r-2xl: 40px;
+  --r-full: 9999px;
+
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 14px rgba(15, 23, 42, 0.07), 0 1px 3px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 14px 36px rgba(15, 23, 42, 0.09), 0 4px 12px rgba(15, 23, 42, 0.04);
+  --shadow-xl: 0 28px 64px rgba(15, 23, 42, 0.12), 0 8px 20px rgba(15, 23, 42, 0.05);
+  --shadow-red: 0 12px 34px rgba(225, 29, 42, 0.38), 0 4px 10px rgba(225, 29, 42, 0.2);
+  --shadow-red-soft: 0 8px 24px rgba(225, 29, 42, 0.22);
+  --shadow-green: 0 12px 34px rgba(37, 211, 102, 0.35), 0 4px 10px rgba(37, 211, 102, 0.18);
+
+  --font-display: 'Bricolage Grotesque', system-ui, -apple-system, sans-serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img, svg { display: block; max-width: 100%; }
+button { font: inherit; cursor: pointer; border: 0; background: none; color: inherit; }
+a { color: inherit; text-decoration: none; }
+input, textarea, select { font: inherit; color: inherit; }
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (min-width: 768px) {
+  .container { padding: 0 32px; }
+}
+
+/* ─────────── TOP NAV ─────────── */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.7);
+}
+
+.nav__inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .nav__inner { padding: 18px 32px; }
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.brand__logo {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
+
+
+.brand__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+
+.brand__name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.brand__sub {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.nav__links {
+  display: none;
+  gap: 4px;
+  flex: 1;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .nav__links { display: flex; }
+}
+
+.nav__link {
+  padding: 8px 16px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+  border-radius: var(--r-full);
+  transition: all 0.2s var(--ease-out);
+  position: relative;
+}
+
+.nav__link:hover { color: var(--ink); background: var(--bg-mid); }
+.nav__link.is-active { color: var(--ink); font-weight: 600; }
+
+.nav__cta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav__phone {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.nav__phone svg { width: 18px; height: 18px; color: var(--red); }
+
+@media (min-width: 768px) {
+  .nav__phone { display: inline-flex; }
+}
+
+/* ─────────── BUTTONS ─────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 24px;
+  border-radius: var(--r-full);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  transition: transform 0.2s var(--ease-out), box-shadow 0.2s var(--ease-out), background 0.2s var(--ease-out);
+  position: relative;
+  will-change: transform;
+}
+
+.btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+.btn--primary {
+  background: linear-gradient(135deg, var(--red) 0%, var(--red-bright) 100%);
+  color: white;
+  box-shadow: var(--shadow-red);
+}
+
+.btn--primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 40px rgba(225, 29, 42, 0.45);
+}
+
+.btn--primary:active { transform: translateY(0); }
+
+.btn--whatsapp {
+  background: linear-gradient(135deg, var(--whatsapp-dark) 0%, var(--whatsapp) 100%);
+  color: white;
+  box-shadow: var(--shadow-green);
+}
+
+.btn--whatsapp:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 40px rgba(37, 211, 102, 0.42);
+}
+
+.btn--ghost {
+  background: var(--bg-mid);
+  color: var(--ink);
+}
+
+.btn--ghost:hover { background: var(--border); }
+
+.btn--outline {
+  background: white;
+  color: var(--ink);
+  border: 1.5px solid var(--border-strong);
+}
+
+.btn--large {
+  padding: 18px 32px;
+  font-size: 17px;
+  border-radius: var(--r-full);
+}
+
+.btn--xl {
+  padding: 22px 40px;
+  font-size: 19px;
+}
+
+.btn--pulse::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: inherit;
+  background: var(--red);
+  z-index: -1;
+  opacity: 0.4;
+  animation: pulse 2s var(--ease-out) infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.4; }
+  100% { transform: scale(1.15); opacity: 0; }
+}
+
+/* ─────────── HERO ─────────── */
+.hero {
+  position: relative;
+  padding: 32px 0 56px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .hero { padding: 56px 0 96px; }
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, var(--red-glow) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 30% at 100% 50%, rgba(37, 211, 102, 0.06) 0%, transparent 60%);
+}
+
+.hero__bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.02) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 30%, black, transparent);
+  -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 30%, black, transparent);
+}
+
+.hero__inner {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+}
+
+.live-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 16px 7px 12px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--r-full);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  margin-bottom: 28px;
+  box-shadow: var(--shadow-sm);
+  letter-spacing: -0.005em;
+}
+
+.live-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--green-bright);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.live-dot::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: var(--green-bright);
+  opacity: 0.4;
+  animation: live-pulse 2.4s var(--ease-out) infinite;
+}
+
+@keyframes live-pulse {
+  0% { transform: scale(0.7); opacity: 0.5; }
+  100% { transform: scale(2.4); opacity: 0; }
+}
+
+.live-status .sep { color: var(--border-strong); margin: 0 4px; }
+.live-status .accent { color: var(--green); }
+
+.hero__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(40px, 8.5vw, 92px);
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  color: var(--ink);
+  margin-bottom: 24px;
+  font-variation-settings: "opsz" 96;
+}
+
+.hero__title .accent { color: var(--red); }
+
+.hero__sub {
+  font-size: clamp(16px, 2.2vw, 20px);
+  color: var(--text);
+  max-width: 640px;
+  margin: 0 auto 40px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Service Cards */
+.service-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 640px) {
+  .service-cards { grid-template-columns: repeat(3, 1fr); gap: 18px; }
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 28px 24px;
+  background: white;
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-xl);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.3s var(--ease-out), border-color 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.service-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--red-glow) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s var(--ease-out);
+  pointer-events: none;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--red);
+  box-shadow: var(--shadow-lg);
+}
+
+.service-card:hover::after { opacity: 1; }
+.service-card:hover .service-card__arrow { transform: translateX(4px); }
+
+.service-card__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: var(--bg-mid);
+  display: grid;
+  place-items: center;
+  margin-bottom: 38px;
+  transition: background 0.3s var(--ease-out);
+}
+
+.service-card:hover .service-card__icon { background: white; }
+.service-card__icon svg { width: 26px; height: 26px; color: var(--ink-soft); }
+
+.service-card__kicker {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.service-card__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  margin-bottom: 24px;
+  line-height: 1.05;
+}
+
+.service-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--red);
+  margin-top: auto;
+}
+
+.service-card__arrow {
+  transition: transform 0.3s var(--ease-out);
+  display: inline-flex;
+}
+
+/* Hero contact */
+.hero__contact-label {
+  font-size: 14px;
+  color: var(--text-soft);
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+
+.hero__contact-btns {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 480px) {
+  .hero__contact-btns .btn { flex: 1; min-width: 0; }
+}
+
+/* Trust strip */
+.trust-strip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px 28px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+}
+
+.trust-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.trust-item svg {
+  width: 18px;
+  height: 18px;
+  color: var(--green);
+  flex-shrink: 0;
+}
+
+/* ─────────── SECTION KICKERS ─────────── */
+.kicker {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 14px;
+}
+
+.h2 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(32px, 5vw, 56px);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  font-variation-settings: "opsz" 64;
+}
+
+.section {
+  padding: 72px 0;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .section { padding: 112px 0; }
+}
+
+.section--soft { background: var(--bg-soft); }
+
+.section__head {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 56px;
+}
+
+.section__head p {
+  margin-top: 18px;
+  font-size: clamp(16px, 2vw, 19px);
+  color: var(--text);
+  line-height: 1.55;
+}
+
+/* ─────────── HOW IT WORKS ─────────── */
+.steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .steps { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+}
+
+.step {
+  position: relative;
+  padding: 32px 28px;
+  background: white;
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-xl);
+  transition: transform 0.3s var(--ease-out), border-color 0.3s var(--ease-out);
+}
+
+.step:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-strong);
+}
+
+.step__num {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--red) 0%, var(--red-bright) 100%);
+  color: white;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 19px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-red-soft);
+}
+
+.step__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+  line-height: 1.15;
+}
+
+.step__text {
+  font-size: 16px;
+  color: var(--text);
+  line-height: 1.55;
+}
+
+/* ─────────── DISPATCH PANEL (live mock) ─────────── */
+.dispatch-mock {
+  margin-top: 64px;
+  background: var(--ink);
+  border-radius: var(--r-2xl);
+  padding: 32px 28px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+@media (min-width: 768px) {
+  .dispatch-mock { padding: 48px 56px; }
+}
+
+.dispatch-mock::before {
+  content: '';
+  position: absolute;
+  top: -50%; right: -20%;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(225, 29, 42, 0.18) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.dispatch-mock::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 24px 24px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, black, transparent);
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, black, transparent);
+  pointer-events: none;
+}
+
+.dispatch-mock__inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .dispatch-mock__inner { grid-template-columns: 1fr 1.1fr; gap: 56px; }
+}
+
+.dispatch-mock__head {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: rgba(34, 197, 94, 0.15);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  color: #4ADE80;
+  border-radius: var(--r-full);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.dispatch-mock__head .live-dot { background: #4ADE80; }
+.dispatch-mock__head .live-dot::after { background: #4ADE80; }
+
+.dispatch-mock h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(28px, 3.5vw, 38px);
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  margin-bottom: 18px;
+}
+
+.dispatch-mock p {
+  font-size: 17px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.55;
+  margin-bottom: 28px;
+}
+
+.dispatch-mock__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.dispatch-mock__stat {
+  padding: 16px 14px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--r-md);
+}
+
+.dispatch-mock__stat-num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.dispatch-mock__stat-label {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  font-weight: 600;
+}
+
+.dispatch-console {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--r-lg);
+  padding: 18px;
+  font-family: var(--font-body);
+  position: relative;
+}
+
+.dispatch-console__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  margin-bottom: 14px;
+}
+
+.dispatch-console__title {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+}
+
+.dispatch-console__dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dispatch-console__dots span {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+}
+
+.dispatch-console__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.dispatch-console__row + .dispatch-console__row { border-top: 1px dashed rgba(255,255,255,0.08); }
+
+.dispatch-console__label {
+  color: rgba(255,255,255,0.6);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dispatch-console__label svg { width: 14px; height: 14px; }
+
+.dispatch-console__value {
+  font-weight: 600;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dispatch-console__value .ok { color: #4ADE80; }
+
+/* ─────────── PRICING STRIP ─────────── */
+.pricing {
+  background: var(--ink);
+  color: white;
+  padding: 28px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .pricing__inner { grid-template-columns: auto 1fr; gap: 48px; }
+}
+
+.pricing__head {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.pricing__head .accent { color: var(--red-bright); }
+
+.pricing__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 24px;
+}
+
+@media (min-width: 768px) {
+  .pricing__grid { grid-template-columns: repeat(4, auto); justify-content: end; }
+}
+
+.pricing__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing__item-label {
+  font-size: 12px;
+  color: rgba(255,255,255,0.55);
+  letter-spacing: 0.04em;
+}
+
+.pricing__item-price {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+  color: white;
+}
+
+.pricing__item-price .from {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.6);
+  margin-right: 2px;
+}
+
+/* ─────────── SERVICES GRID ─────────── */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+@media (min-width: 640px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .services-grid { grid-template-columns: repeat(3, 1fr); gap: 18px; }
+}
+
+.service-item {
+  padding: 28px;
+  background: white;
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-xl);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform 0.3s var(--ease-out), border-color 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-item:hover {
+  border-color: var(--ink-soft);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.service-item__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--red-soft);
+  display: grid;
+  place-items: center;
+  color: var(--red);
+}
+
+.service-item__icon svg { width: 24px; height: 24px; }
+
+.service-item__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.service-item__text {
+  font-size: 15px;
+  color: var(--text);
+  line-height: 1.55;
+  flex: 1;
+}
+
+.service-item__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--red);
+  margin-top: 4px;
+}
+
+/* ─────────── AREAS ─────────── */
+.areas-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .areas-wrap { grid-template-columns: 1.2fr 1fr; gap: 64px; }
+}
+
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+@media (min-width: 640px) {
+  .areas-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.area-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  transition: all 0.2s var(--ease-out);
+}
+
+.area-pill:hover {
+  border-color: var(--red);
+  color: var(--red);
+  background: var(--red-soft);
+}
+
+.area-pill::before {
+  content: '';
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--green-bright);
+  flex-shrink: 0;
+}
+
+.areas-card {
+  padding: 36px 32px;
+  background: var(--ink);
+  border-radius: var(--r-2xl);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.areas-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle 1px at center, rgba(255,255,255,0.15) 1px, transparent 1px);
+  background-size: 12px 12px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent);
+  -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent);
+}
+
+.areas-card__inner {
+  position: relative;
+}
+
+.areas-card h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 14px;
+}
+
+.areas-card p {
+  color: rgba(255,255,255,0.7);
+  font-size: 16px;
+  line-height: 1.55;
+  margin-bottom: 24px;
+}
+
+.coverage-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.coverage-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 12px 14px;
+  background: rgba(255,255,255,0.06);
+  border-radius: var(--r-md);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.coverage-row__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255,255,255,0.8);
+}
+
+.coverage-row__label .dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--green-bright);
+}
+
+.coverage-row__value {
+  font-weight: 700;
+  color: white;
+}
+
+/* ─────────── REVIEWS ─────────── */
+.reviews-summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin: 0 auto 56px;
+  padding: 20px 28px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--r-full);
+  width: fit-content;
+  box-shadow: var(--shadow-sm);
+}
+
+.reviews-stars { display: flex; gap: 2px; }
+.reviews-stars svg { width: 22px; height: 22px; color: #FFB400; }
+
+.reviews-stat {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+
+.reviews-stat-label {
+  font-size: 14px;
+  color: var(--text);
+}
+
+.reviews-divider {
+  width: 1px;
+  height: 28px;
+  background: var(--border);
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+@media (min-width: 768px) {
+  .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .reviews-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.review {
+  padding: 28px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--r-xl);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+.review__stars { display: flex; gap: 2px; }
+.review__stars svg { width: 16px; height: 16px; color: #FFB400; }
+
+.review__quote {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  flex: 1;
+}
+
+.review__author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.review__avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--bg-mid), var(--border));
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--ink);
+  flex-shrink: 0;
+}
+
+.review__name {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--ink);
+}
+
+.review__meta {
+  font-size: 12px;
+  color: var(--text-soft);
+  margin-top: 2px;
+}
+
+/* ─────────── WHY US ─────────── */
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+@media (min-width: 640px) {
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .why-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+.why-card {
+  padding: 28px;
+  background: white;
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-xl);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.why-card__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: var(--red-soft);
+  display: grid;
+  place-items: center;
+  color: var(--red);
+}
+
+.why-card__icon svg { width: 26px; height: 26px; }
+
+.why-card__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.why-card__text {
+  font-size: 14.5px;
+  color: var(--text);
+  line-height: 1.55;
+}
+
+/* ─────────── FAQ ─────────── */
+.faq-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq-item {
+  background: white;
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  transition: border-color 0.2s var(--ease-out);
+}
+
+.faq-item[open] { border-color: var(--ink-soft); }
+
+.faq-item summary {
+  padding: 20px 22px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker { display: none; }
+
+.faq-item summary::after {
+  content: '';
+  width: 24px; height: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230A0E1A' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 5v14M5 12h14'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.3s var(--ease-out);
+  flex-shrink: 0;
+}
+
+.faq-item[open] summary::after { transform: rotate(45deg); }
+
+.faq-item__body {
+  padding: 0 22px 22px;
+  color: var(--text);
+  font-size: 15.5px;
+  line-height: 1.6;
+}
+
+.faq-item__body strong { color: var(--ink); font-weight: 700; }
+
+/* ─────────── FINAL CTA ─────────── */
+.final-cta {
+  position: relative;
+  padding: 80px 0;
+  background: var(--ink);
+  color: white;
+  overflow: hidden;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .final-cta { padding: 120px 0; }
+}
+
+.final-cta::before {
+  content: '';
+  position: absolute;
+  top: -30%; left: 50%;
+  transform: translateX(-50%);
+  width: 1200px; height: 800px;
+  background: radial-gradient(ellipse, var(--red-glow) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.final-cta::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black, transparent);
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black, transparent);
+  pointer-events: none;
+}
+
+.final-cta__inner {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.final-cta .live-status {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.85);
+}
+
+.final-cta h2 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(36px, 7vw, 76px);
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  margin-bottom: 18px;
+  font-variation-settings: "opsz" 96;
+}
+
+.final-cta h2 .accent { color: var(--red-bright); }
+
+.final-cta__phone {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(40px, 8vw, 84px);
+  letter-spacing: -0.04em;
+  display: inline-block;
+  margin: 24px 0 36px;
+  color: white;
+  position: relative;
+  transition: transform 0.3s var(--ease-out);
+}
+
+.final-cta__phone:hover { transform: scale(1.02); }
+
+.final-cta p {
+  font-size: clamp(16px, 2vw, 19px);
+  color: rgba(255,255,255,0.7);
+  max-width: 540px;
+  margin: 0 auto 28px;
+}
+
+.final-cta__buttons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ─────────── FOOTER ─────────── */
+.footer {
+  background: var(--bg-soft);
+  border-top: 1px solid var(--border);
+  padding: 64px 0 32px;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--border);
+}
+
+@media (min-width: 640px) {
+  .footer__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .footer__grid { grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 56px; }
+}
+
+.footer__brand-block { max-width: 360px; }
+.footer__brand-block p {
+  font-size: 14.5px;
+  color: var(--text);
+  line-height: 1.6;
+  margin: 18px 0 22px;
+}
+
+.footer__phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+  color: var(--red);
+  margin-bottom: 6px;
+}
+
+.footer__phone svg { width: 22px; height: 22px; }
+
+.footer__hours {
+  font-size: 13px;
+  color: var(--text-soft);
+}
+
+.footer__col h4 {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+.footer__col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__col a {
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  transition: color 0.2s;
+}
+
+.footer__col a:hover { color: var(--red); }
+
+.footer__legal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding-top: 28px;
+  font-size: 13px;
+  color: var(--text-soft);
+}
+
+.footer__legal a:hover { color: var(--ink); }
+
+/* ─────────── STICKY MOBILE BAR ─────────── */
+.sticky-mobile {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 12px 14px calc(12px + env(safe-area-inset-bottom));
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-top: 1px solid var(--border);
+  transform: translateY(100%);
+  transition: transform 0.4s var(--ease-out);
+}
+
+.sticky-mobile.is-visible { transform: translateY(0); }
+
+@media (min-width: 1024px) {
+  .sticky-mobile { display: none; }
+}
+
+.sticky-mobile .btn { padding: 14px 12px; font-size: 15px; }
+
+/* ─────────── MODAL: DISPATCH FLOW ─────────── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(10, 14, 26, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s var(--ease-out);
+}
+
+@media (min-width: 640px) {
+  .modal-overlay { align-items: center; padding: 24px; }
+}
+
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  background: white;
+  width: 100%;
+  max-width: 540px;
+  border-radius: var(--r-2xl) var(--r-2xl) 0 0;
+  padding: 28px 24px 32px;
+  max-height: 92vh;
+  overflow-y: auto;
+  position: relative;
+  transform: translateY(100%);
+  transition: transform 0.4s var(--ease-out);
+  box-shadow: var(--shadow-xl);
+}
+
+@media (min-width: 640px) {
+  .modal { border-radius: var(--r-2xl); padding: 36px 36px 36px; }
+}
+
+.modal-overlay.is-open .modal { transform: translateY(0); }
+
+.modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--bg-mid);
+  display: grid;
+  place-items: center;
+  color: var(--ink);
+  transition: background 0.2s;
+}
+
+.modal__close:hover { background: var(--border); }
+.modal__close svg { width: 18px; height: 18px; }
+
+.modal__head {
+  margin-bottom: 24px;
+}
+
+.modal__kicker {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 10px;
+}
+
+.modal__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 30px;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.modal__sub {
+  font-size: 15px;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.modal__progress {
+  display: flex;
+  gap: 6px;
+  margin: 0 0 24px;
+}
+
+.modal__progress span {
+  flex: 1;
+  height: 4px;
+  background: var(--bg-mid);
+  border-radius: var(--r-full);
+  transition: background 0.3s;
+}
+
+.modal__progress span.is-done { background: var(--green-bright); }
+.modal__progress span.is-active { background: var(--red); }
+
+.step-pane { display: none; }
+.step-pane.is-active { display: block; }
+
+.choice-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  background: white;
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-md);
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s var(--ease-out);
+  width: 100%;
+}
+
+.choice:hover, .choice.is-selected {
+  border-color: var(--red);
+  background: var(--red-soft);
+}
+
+.choice__icon {
+  width: 38px; height: 38px;
+  border-radius: 10px;
+  background: var(--bg-mid);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  color: var(--ink);
+}
+
+.choice:hover .choice__icon, .choice.is-selected .choice__icon {
+  background: white;
+  color: var(--red);
+}
+
+.choice__icon svg { width: 20px; height: 20px; }
+
+.choice__label {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.choice__sub {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-top: 2px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.field input {
+  padding: 14px 16px;
+  background: var(--bg-soft);
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-md);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--ink);
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: var(--red);
+  background: white;
+}
+
+.field__hint {
+  font-size: 12px;
+  color: var(--text-soft);
+}
+
+.modal__nav {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.modal__nav .btn { flex: 1; }
+
+/* Searching state */
+.searching {
+  text-align: center;
+  padding: 24px 0;
+}
+
+.searching__animation {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 24px;
+  position: relative;
+}
+
+.searching__pulse {
+  position: absolute;
+  inset: 0;
+  border: 2px solid var(--red);
+  border-radius: 50%;
+  opacity: 0;
+  animation: search-pulse 2s var(--ease-out) infinite;
+}
+
+.searching__pulse:nth-child(2) { animation-delay: 0.5s; }
+.searching__pulse:nth-child(3) { animation-delay: 1s; }
+
+@keyframes search-pulse {
+  0% { transform: scale(0.2); opacity: 0.8; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+
+.searching__core {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px; height: 56px;
+  background: linear-gradient(135deg, var(--red), var(--red-bright));
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: white;
+  box-shadow: var(--shadow-red);
+}
+
+.searching__core svg { width: 26px; height: 26px; }
+
+.searching__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+
+.searching__sub {
+  font-size: 14px;
+  color: var(--text);
+}
+
+.searching__rows {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.searching__row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: var(--bg-soft);
+  border-radius: var(--r-md);
+  font-size: 13.5px;
+  color: var(--text);
+  opacity: 0;
+  transform: translateY(8px);
+  animation: row-in 0.4s var(--ease-out) forwards;
+}
+
+.searching__row:nth-child(1) { animation-delay: 0.2s; }
+.searching__row:nth-child(2) { animation-delay: 0.9s; }
+.searching__row:nth-child(3) { animation-delay: 1.7s; }
+
+@keyframes row-in {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.searching__row svg { width: 16px; height: 16px; color: var(--green); flex-shrink: 0; }
+.searching__row .pending { color: var(--amber); }
+.searching__row .check { color: var(--green); }
+
+/* Confirmation */
+.confirm__hero {
+  background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%);
+  border-radius: var(--r-xl);
+  padding: 28px 22px;
+  text-align: center;
+  margin-bottom: 22px;
+  position: relative;
+  overflow: hidden;
+}
+
+.confirm__hero::before {
+  content: '';
+  position: absolute;
+  top: -40px; right: -40px;
+  width: 140px; height: 140px;
+  background: radial-gradient(circle, rgba(34,197,94,0.3), transparent 60%);
+}
+
+.confirm__check {
+  width: 64px; height: 64px;
+  margin: 0 auto 16px;
+  background: var(--green);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: white;
+  box-shadow: var(--shadow-green);
+  position: relative;
+  animation: check-bounce 0.6s var(--ease-spring);
+}
+
+@keyframes check-bounce {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+
+.confirm__check svg { width: 30px; height: 30px; }
+
+.confirm__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 26px;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.confirm__sub {
+  font-size: 14px;
+  color: var(--ink-soft);
+  position: relative;
+}
+
+.confirm__details {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.confirm__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.confirm__row + .confirm__row { padding-top: 12px; border-top: 1px dashed var(--border); }
+
+.confirm__row-label {
+  color: var(--text-soft);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.confirm__row-label svg { width: 14px; height: 14px; }
+
+.confirm__row-value {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.confirm__cta { width: 100%; }
+
+/* Service tag (shown above modal title once a service is picked) */
+.modal__service-tag {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px 10px 10px;
+  background: var(--red-soft);
+  border: 1px solid rgba(225, 29, 42, 0.18);
+  border-radius: var(--r-md);
+  margin-bottom: 18px;
+}
+
+.modal__service-tag-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: white;
+  display: grid;
+  place-items: center;
+  color: var(--red);
+  flex-shrink: 0;
+}
+
+.modal__service-tag-icon svg { width: 20px; height: 20px; }
+
+.modal__service-tag-text { flex: 1; min-width: 0; }
+
+.modal__service-tag-kicker {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--red);
+  line-height: 1.2;
+}
+
+.modal__service-tag-label {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--ink);
+  margin-top: 2px;
+  line-height: 1.2;
+}
+
+.modal__service-tag-edit {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--red);
+  padding: 8px 12px;
+  border-radius: var(--r-full);
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+
+.modal__service-tag-edit:hover { background: white; }
+
+/* Problem grid (Step 1) */
+.problem-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.problem-choice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 18px;
+  background: white;
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-md);
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s var(--ease-out);
+  width: 100%;
+}
+
+.problem-choice:hover,
+.problem-choice:focus-visible {
+  border-color: var(--red);
+  background: var(--red-soft);
+  outline: none;
+}
+
+.problem-choice__label {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.problem-choice:hover .problem-choice__label,
+.problem-choice:focus-visible .problem-choice__label {
+  color: var(--red);
+}
+
+.problem-choice__arrow {
+  width: 18px;
+  height: 18px;
+  color: var(--text-muted);
+  transition: transform 0.2s, color 0.2s;
+  flex-shrink: 0;
+}
+
+.problem-choice:hover .problem-choice__arrow,
+.problem-choice:focus-visible .problem-choice__arrow {
+  color: var(--red);
+  transform: translateX(2px);
+}
+
+/* Field tweaks */
+.field__optional {
+  font-weight: 400;
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+.field__required {
+  color: var(--red);
+  font-weight: 700;
+}
+
+/* Form error */
+.form-error {
+  margin: -4px 0 14px;
+  padding: 12px 14px;
+  background: #FEF2F3;
+  border: 1px solid rgba(225, 29, 42, 0.22);
+  border-radius: var(--r-md);
+  color: var(--red-dark);
+  font-size: 13.5px;
+  font-weight: 600;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.form-error svg { width: 16px; height: 16px; flex-shrink: 0; margin-top: 2px; }
+
+/* Honeypot — hidden bot trap */
+.honeypot {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+}
+
+/* Error state pane */
+.error-hero {
+  background: linear-gradient(135deg, #FEF2F3 0%, #FEE2E2 100%);
+  border-radius: var(--r-xl);
+  padding: 28px 22px;
+  text-align: center;
+  margin-bottom: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.error-hero::before {
+  content: '';
+  position: absolute;
+  top: -40px; right: -40px;
+  width: 140px; height: 140px;
+  background: radial-gradient(circle, rgba(225,29,42,0.18), transparent 60%);
+}
+
+.error-hero__icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 14px;
+  background: var(--red);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: white;
+  box-shadow: var(--shadow-red-soft);
+  position: relative;
+}
+
+.error-hero__icon svg { width: 28px; height: 28px; }
+
+.error-hero__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.error-hero__sub {
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  position: relative;
+}
+
+/* Confirm note */
+.confirm__note {
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-soft);
+  margin: 4px 0 12px;
+}
+
+/* Showcase (on-the-job photos) */
+.showcase-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 900px) {
+  .showcase-grid {
+    grid-template-columns: 1.4fr 1fr;
+    grid-template-rows: minmax(280px, 1fr) minmax(280px, 1fr);
+    gap: 20px;
+  }
+  .showcase-card--lg {
+    grid-row: span 2;
+  }
+}
+
+.showcase-card {
+  position: relative;
+  border-radius: var(--r-2xl);
+  overflow: hidden;
+  border: 2px solid var(--red);
+  background: linear-gradient(135deg, var(--ink) 0%, #1a2235 100%);
+  min-height: 280px;
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
+  margin: 0;
+}
+
+.showcase-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 56px rgba(225, 29, 42, 0.22), 0 8px 18px rgba(15, 23, 42, 0.12);
+}
+
+.showcase-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s var(--ease-out);
+}
+
+.showcase-card:hover img { transform: scale(1.04); }
+
+.showcase-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10, 14, 26, 0.92) 0%, rgba(10, 14, 26, 0.45) 40%, transparent 70%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.showcase-card__frame {
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: calc(var(--r-2xl) - 14px);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.showcase-card figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 26px 26px 24px;
+  color: white;
+  z-index: 3;
+}
+
+.showcase-card__kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 12px;
+  padding: 5px 11px;
+  background: var(--red);
+  border-radius: var(--r-full);
+  box-shadow: 0 4px 14px rgba(225, 29, 42, 0.4);
+}
+
+.showcase-card__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(22px, 2.6vw, 28px);
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  font-variation-settings: "opsz" 72;
+}
+
+.showcase-card--lg .showcase-card__title {
+  font-size: clamp(26px, 3.4vw, 40px);
+  letter-spacing: -0.03em;
+}
+
+.showcase-card__text {
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.82);
+  margin-top: 10px;
+  max-width: 90%;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.showcase-credit {
+  margin-top: 28px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+
+/* Eta badge inside confirmation */
+.confirm__eta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  background: white;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  border-radius: var(--r-full);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--green);
+  margin-top: 14px;
+  position: relative;
+}
+
+.confirm__eta::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green-bright);
+  animation: live-pulse 2.4s var(--ease-out) infinite;
+}
+
+/* Reveal animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mobile body padding for sticky bar */
+@media (max-width: 1023px) {
+  body { padding-bottom: 84px; }
+}
+
+/* Reduce-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ═════════ TOP NAV ═════════ -->
+<header class="nav">
+  <div class="nav__inner">
+    <a href="#" class="brand">
+      <div class="brand__mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="7" cy="14" r="5"/>
+          <path d="M11 14L20 5l-3-3"/>
+          <path d="M16 9l-3-3"/>
+        </svg>
+      </div>
+      <div class="brand__text">
+        <span class="brand__sub">Manchester · 24/7</span>
+      </div>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#" class="nav__link is-active">Home</a>
+      <a href="#services" class="nav__link">Services</a>
+      <a href="#areas" class="nav__link">Areas</a>
+      <a href="#why" class="nav__link">About</a>
+      <a href="#faq" class="nav__link">Contact</a>
+    </nav>
+
+    <div class="nav__cta">
+      <a href="tel:07760587095" class="nav__phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        07760 587095
+      </a>
+      <a href="tel:07760587095" class="btn btn--primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        Call Now
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ═════════ HERO ═════════ -->
+<section class="hero">
+  <div class="hero__bg"></div>
+  <div class="hero__inner">
+    <div class="live-status">
+      <span class="live-dot"></span>
+      <span class="accent">Live</span>
+      <span class="sep">·</span>
+      Average response 30 – 60 mins
+    </div>
+
+    <h1 class="hero__title">
+      Locked Out? <span class="accent">We Can Help Fast.</span>
+    </h1>
+
+    <p class="hero__sub">
+      24/7 emergency locksmith dispatch across Greater Manchester.
+    </p>
+
+    <div class="service-cards">
+      <button class="service-card" data-service="house" data-service-label="House / Flat lockout">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1z"/>
+          </svg>
+        </div>
+        <div class="service-card__kicker">House / Flat</div>
+        <div class="service-card__title">Locked Out</div>
+        <div class="service-card__cta">
+          Get help now
+          <span class="service-card__arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </button>
+
+      <button class="service-card" data-service="car" data-service-label="Car / Van lockout">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 16H9m10 0h1a1 1 0 0 0 1-1v-3.34a3 3 0 0 0-.36-1.43l-1.16-2.16A4 4 0 0 0 15.96 6H8.04a4 4 0 0 0-3.52 2.07L3.36 10.23A3 3 0 0 0 3 11.66V15a1 1 0 0 0 1 1h1"/>
+            <circle cx="7" cy="16" r="2"/>
+            <circle cx="17" cy="16" r="2"/>
+          </svg>
+        </div>
+        <div class="service-card__kicker">Car / Van</div>
+        <div class="service-card__title">Locked Out</div>
+        <div class="service-card__cta">
+          Get help now
+          <span class="service-card__arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </button>
+
+      <button class="service-card" data-service="commercial" data-service-label="Office / Shop lockout">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/>
+            <path d="M9 9h.01M9 12h.01M9 15h.01M9 18h.01"/>
+          </svg>
+        </div>
+        <div class="service-card__kicker">Office / Shop</div>
+        <div class="service-card__title">Commercial</div>
+        <div class="service-card__cta">
+          Get help now
+          <span class="service-card__arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </button>
+    </div>
+
+    <div class="hero__contact-label">Or talk to us right now:</div>
+    <div class="hero__contact-btns">
+      <a href="tel:07760587095" class="btn btn--primary btn--large btn--pulse">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        Call 07760 587095
+      </a>
+      <a href="https://wa.me/447760587095?text=Hi%20LockDirect%2C%20I%27m%20locked%20out" class="btn btn--whatsapp btn--large" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.6 6.32A7.85 7.85 0 0 0 12.05 4a7.95 7.95 0 0 0-6.9 11.93L4 20l4.15-1.09a7.94 7.94 0 0 0 3.9 1h.01a7.95 7.95 0 0 0 7.95-7.94 7.9 7.9 0 0 0-2.41-5.65zM12.05 18.6a6.6 6.6 0 0 1-3.36-.92l-.24-.14-2.5.66.67-2.44-.16-.25a6.6 6.6 0 0 1 10.27-8.18 6.55 6.55 0 0 1 1.93 4.68 6.61 6.61 0 0 1-6.61 6.59zm3.62-4.94c-.2-.1-1.18-.58-1.36-.65-.18-.07-.31-.1-.45.1-.13.2-.51.65-.63.78-.12.13-.23.15-.43.05-.2-.1-.84-.31-1.6-.99a6 6 0 0 1-1.1-1.37c-.12-.2-.01-.31.09-.41.09-.09.2-.23.3-.35.1-.12.13-.2.2-.33.07-.13.03-.25-.02-.35-.05-.1-.45-1.09-.62-1.49-.16-.39-.33-.34-.45-.34l-.39-.01a.74.74 0 0 0-.54.25c-.18.2-.7.69-.7 1.67 0 .99.72 1.94.82 2.07.1.13 1.42 2.17 3.45 3.04 1.21.52 1.68.57 2.29.48.37-.06 1.18-.48 1.34-.95.17-.46.17-.86.12-.95-.05-.08-.18-.13-.38-.23z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+
+    <div class="trust-strip">
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+        DBS Checked
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+        No Call-Out Fee
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        24 / 7 Dispatch
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        Fully Insured
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        12 Mo Guarantee
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ PRICING STRIP ═════════ -->
+<section class="pricing" aria-label="Transparent pricing">
+  <div class="container">
+    <div class="pricing__inner">
+      <div class="pricing__head">
+        Transparent pricing. <span class="accent">No surprises.</span>
+      </div>
+      <div class="pricing__grid">
+        <div class="pricing__item">
+          <span class="pricing__item-label">House lockout</span>
+          <span class="pricing__item-price"><span class="from">from</span>£79</span>
+        </div>
+        <div class="pricing__item">
+          <span class="pricing__item-label">Car lockout</span>
+          <span class="pricing__item-price"><span class="from">from</span>£89</span>
+        </div>
+        <div class="pricing__item">
+          <span class="pricing__item-label">Lock change</span>
+          <span class="pricing__item-price"><span class="from">from</span>£99</span>
+        </div>
+        <div class="pricing__item">
+          <span class="pricing__item-label">UPVC fix</span>
+          <span class="pricing__item-price"><span class="from">from</span>£89</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ HOW IT WORKS ═════════ -->
+<section class="section" id="how">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="kicker">How It Works</span>
+      <h2 class="h2">Help in three steps.</h2>
+      <p>No accounts. No forms. No fluff. Just the fastest way to get help to your door.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step__num">1</div>
+        <h3 class="step__title">Tell us what you need</h3>
+        <p class="step__text">Tap a button or give us a quick call. House lockout, car lockout, commercial — we route it.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step__num">2</div>
+        <h3 class="step__title">Share your postcode</h3>
+        <p class="step__text">We find the nearest available locksmith in our Greater Manchester network and confirm the ETA.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step__num">3</div>
+        <h3 class="step__title">Help arrives, fast</h3>
+        <p class="step__text">Typical response 30–60 mins across Manchester city centre. Pay only after the job is done.</p>
+      </div>
+    </div>
+
+    <!-- Live Dispatch Mock -->
+    <div class="dispatch-mock reveal">
+      <div class="dispatch-mock__inner">
+        <div>
+          <div class="dispatch-mock__head"><span class="live-dot"></span> Network Live</div>
+          <h3>Real locksmiths. Routed in real time.</h3>
+          <p>You're not calling a call centre in a different city. Our dispatcher sees who's nearest, available right now, and DBS-checked — then connects you in seconds.</p>
+          <div class="dispatch-mock__stats">
+            <div class="dispatch-mock__stat">
+              <div class="dispatch-mock__stat-num">7</div>
+              <div class="dispatch-mock__stat-label">Active now</div>
+            </div>
+            <div class="dispatch-mock__stat">
+              <div class="dispatch-mock__stat-num">34<small style="font-size:14px;color:rgba(255,255,255,0.5);">m</small></div>
+              <div class="dispatch-mock__stat-label">Avg ETA</div>
+            </div>
+            <div class="dispatch-mock__stat">
+              <div class="dispatch-mock__stat-num">98<small style="font-size:14px;color:rgba(255,255,255,0.5);">%</small></div>
+              <div class="dispatch-mock__stat-label">First call fixed</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dispatch-console" aria-hidden="true">
+          <div class="dispatch-console__header">
+            <span class="dispatch-console__title">Dispatch Feed</span>
+            <span class="dispatch-console__dots"><span></span><span></span><span></span></span>
+          </div>
+          <div class="dispatch-console__row">
+            <span class="dispatch-console__label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              SK3 · Stockport
+            </span>
+            <span class="dispatch-console__value"><span class="ok">●</span> Dispatched · 22m</span>
+          </div>
+          <div class="dispatch-console__row">
+            <span class="dispatch-console__label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              M14 · Fallowfield
+            </span>
+            <span class="dispatch-console__value"><span class="ok">●</span> On site · 4m ago</span>
+          </div>
+          <div class="dispatch-console__row">
+            <span class="dispatch-console__label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              OL1 · Oldham
+            </span>
+            <span class="dispatch-console__value">Routing</span>
+          </div>
+          <div class="dispatch-console__row">
+            <span class="dispatch-console__label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              M20 · Didsbury
+            </span>
+            <span class="dispatch-console__value"><span class="ok">✓</span> Job done · 38m</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ SHOWCASE (on-the-job photos) ═════════ -->
+<!--
+  Photos are hot-linked from Unsplash placeholders. Swap the `src` URLs
+  for your own job photos when ready. Recommended dimensions: 1400x900
+  for the large card, 900x900 for the smaller ones.
+-->
+<section class="section" id="showcase">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="kicker">On the job</span>
+      <h2 class="h2">No drilling. No drama. <span style="color:var(--red);">Just open.</span></h2>
+      <p>Our engineers arrive in branded vans with the full kit — picks, bypass tools, replacement cylinders, programming gear. Damage is a last resort, not a first move.</p>
+    </div>
+
+    <div class="showcase-grid">
+      <figure class="showcase-card showcase-card--lg reveal">
+        <img src="https://images.unsplash.com/photo-1562343750-446a1e7693b6?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Car key being held against a vehicle door" loading="lazy">
+        <div class="showcase-card__frame"></div>
+        <figcaption>
+          <span class="showcase-card__kicker">01 — Auto</span>
+          <h3 class="showcase-card__title">Cars opened without a scratch.</h3>
+          <p class="showcase-card__text">Air wedges and long-reach picks. Most vehicles unlocked in under 10 minutes on-site, no broken trim, no smashed glass.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="showcase-card reveal">
+        <img src="https://images.unsplash.com/photo-1544668637-89001ab6415e?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Close-up of a brass cylinder door lock" loading="lazy">
+        <div class="showcase-card__frame"></div>
+        <figcaption>
+          <span class="showcase-card__kicker">02 — Cylinders</span>
+          <h3 class="showcase-card__title">Anti-snap, fitted on-site.</h3>
+        </figcaption>
+      </figure>
+
+      <figure class="showcase-card reveal">
+        <img src="https://images.unsplash.com/photo-1554863885-e3a33dd1bc82?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Locksmith working on a lock mechanism" loading="lazy">
+        <div class="showcase-card__frame"></div>
+        <figcaption>
+          <span class="showcase-card__kicker">03 — UPVC</span>
+          <h3 class="showcase-card__title">Gearboxes replaced same-day.</h3>
+        </figcaption>
+      </figure>
+    </div>
+
+    <p class="showcase-credit">Stock photography. Your actual engineer arrives in a branded van.</p>
+  </div>
+</section>
+
+<!-- ═════════ SERVICES FULL GRID ═════════ -->
+<section class="section section--soft" id="services">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="kicker">Services</span>
+      <h2 class="h2">Everything a locksmith should be.</h2>
+      <p>From a 2am lockout to a full commercial security upgrade — our network handles it.</p>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-item reveal">
+        <div class="service-item__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1z"/></svg>
+        </div>
+        <h3 class="service-item__title">House &amp; Flat Lockouts</h3>
+        <p class="service-item__text">Lost keys, snapped key, faulty cylinder — we'll get you back inside without damaging your door whenever possible.</p>
+        <a href="tel:07760587095" class="service-item__cta">Get help now →</a>
+      </article>
+
+      <article class="service-item reveal">
+        <div class="service-item__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 16H9m10 0h1a1 1 0 0 0 1-1v-3.34a3 3 0 0 0-.36-1.43l-1.16-2.16A4 4 0 0 0 15.96 6H8.04a4 4 0 0 0-3.52 2.07L3.36 10.23A3 3 0 0 0 3 11.66V15a1 1 0 0 0 1 1h1"/><circle cx="7" cy="16" r="2"/><circle cx="17" cy="16" r="2"/></svg>
+        </div>
+        <h3 class="service-item__title">Car &amp; Van Unlocks</h3>
+        <p class="service-item__text">Keys locked inside, snapped key in ignition, or boot stuck. Auto specialists across Greater Manchester.</p>
+        <a href="tel:07760587095" class="service-item__cta">Get help now →</a>
+      </article>
+
+      <article class="service-item reveal">
+        <div class="service-item__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h3 class="service-item__title">Lock Changes &amp; Upgrades</h3>
+        <p class="service-item__text">British Standard, anti-snap, anti-bump cylinders. Insurance-approved upgrades for moving day or after a break-in.</p>
+        <a href="tel:07760587095" class="service-item__cta">Get help now →</a>
+      </article>
+
+      <article class="service-item reveal">
+        <div class="service-item__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 class="service-item__title">Burglary Repair</h3>
+        <p class="service-item__text">Boarding up, full lock replacement, frame and strike repair. We can be on-site within the hour.</p>
+        <a href="tel:07760587095" class="service-item__cta">Get help now →</a>
+      </article>
+
+      <article class="service-item reveal">
+        <div class="service-item__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+        </div>
+        <h3 class="service-item__title">UPVC Door Repair</h3>
+        <p class="service-item__text">Stuck multipoint, dropped door, failed gearbox. Most UPVC mechanisms repaired same-day, not replaced.</p>
+        <a href="tel:07760587095" class="service-item__cta">Get help now →</a>
+      </article>
+
+      <article class="service-item reveal">
+        <div class="service-item__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+        </div>
+        <h3 class="service-item__title">Safe Opening</h3>
+        <p class="service-item__text">Home safes, office safes, deposit safes. Non-destructive entry where possible. Discreet, insured engineers.</p>
+        <a href="tel:07760587095" class="service-item__cta">Get help now →</a>
+      </article>
+
+      <article class="service-item reveal">
+        <div class="service-item__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="14" r="5"/><path d="M11 14L20 5l-3-3"/><path d="M16 9l-3-3"/></svg>
+        </div>
+        <h3 class="service-item__title">Lost Key Rekeying</h3>
+        <p class="service-item__text">Lost your only key? We rekey the cylinder so old keys won't work — cheaper than a full lock change.</p>
+        <a href="tel:07760587095" class="service-item__cta">Get help now →</a>
+      </article>
+
+      <article class="service-item reveal">
+        <div class="service-item__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/></svg>
+        </div>
+        <h3 class="service-item__title">Commercial &amp; Office</h3>
+        <p class="service-item__text">Master key suites, access control, panic bars, fire-rated locks. Landlord and end-of-tenancy lock changes.</p>
+        <a href="tel:07760587095" class="service-item__cta">Get help now →</a>
+      </article>
+
+      <article class="service-item reveal">
+        <div class="service-item__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h3 class="service-item__title">Security Surveys</h3>
+        <p class="service-item__text">Free walk-around assessment of locks, doors and windows. Insurance-compliance check and quote.</p>
+        <a href="tel:07760587095" class="service-item__cta">Get help now →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ AREAS ═════════ -->
+<section class="section" id="areas">
+  <div class="container">
+    <div class="section__head reveal" style="text-align:left;max-width:none;margin-bottom:48px;">
+      <span class="kicker">Coverage</span>
+      <h2 class="h2">All of Greater Manchester.<br>Every postcode.</h2>
+    </div>
+
+    <div class="areas-wrap">
+      <div class="areas-grid reveal">
+        <a href="areas/manchester.html" class="area-pill">Manchester</a>
+        <a href="areas/salford.html" class="area-pill">Salford</a>
+        <a href="areas/stockport.html" class="area-pill">Stockport</a>
+        <a href="areas/oldham.html" class="area-pill">Oldham</a>
+        <a href="areas/rochdale.html" class="area-pill">Rochdale</a>
+        <a href="areas/bury.html" class="area-pill">Bury</a>
+        <a href="areas/bolton.html" class="area-pill">Bolton</a>
+        <a href="areas/wigan.html" class="area-pill">Wigan</a>
+        <a href="areas/altrincham.html" class="area-pill">Altrincham</a>
+        <a href="areas/sale.html" class="area-pill">Sale</a>
+        <a href="areas/didsbury.html" class="area-pill">Didsbury</a>
+        <a href="areas/chorlton.html" class="area-pill">Chorlton</a>
+        <a href="areas/withington.html" class="area-pill">Withington</a>
+        <a href="areas/prestwich.html" class="area-pill">Prestwich</a>
+        <a href="areas/eccles.html" class="area-pill">Eccles</a>
+        <a href="areas/cheadle.html" class="area-pill">Cheadle</a>
+        <a href="areas/ashton.html" class="area-pill">Ashton</a>
+        <a href="areas/hyde.html" class="area-pill">Hyde</a>
+      </div>
+
+      <div class="areas-card reveal">
+        <div class="areas-card__inner">
+          <h3>Locksmiths within reach of your postcode.</h3>
+          <p>Greater Manchester is divided across our network so we always have someone nearby. Postcodes covered:</p>
+          <div class="coverage-bar">
+            <div class="coverage-row">
+              <span class="coverage-row__label"><span class="dot"></span>M Postcodes</span>
+              <span class="coverage-row__value">M1 – M44</span>
+            </div>
+            <div class="coverage-row">
+              <span class="coverage-row__label"><span class="dot"></span>SK Postcodes</span>
+              <span class="coverage-row__value">SK1 – SK16</span>
+            </div>
+            <div class="coverage-row">
+              <span class="coverage-row__label"><span class="dot"></span>OL / BL / BB</span>
+              <span class="coverage-row__value">All</span>
+            </div>
+            <div class="coverage-row">
+              <span class="coverage-row__label"><span class="dot"></span>WA / WN</span>
+              <span class="coverage-row__value">All</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ WHY US ═════════ -->
+<section class="section section--soft" id="why">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="kicker">Why LockDirect</span>
+      <h2 class="h2">Trusted because we earn it. Every callout.</h2>
+      <p>Anyone can put "24/7" on a website. Here's how we're different from the chancers.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h3 class="why-card__title">DBS-checked engineers</h3>
+        <p class="why-card__text">Every locksmith in our network is background-checked and verified. We'll never send a stranger you can't trust.</p>
+      </div>
+
+      <div class="why-card reveal">
+        <div class="why-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+        </div>
+        <h3 class="why-card__title">Pay after the job</h3>
+        <p class="why-card__text">No deposits, no upfront fees. Card, cash, bank transfer accepted. The price you're quoted is the price you pay.</p>
+      </div>
+
+      <div class="why-card reveal">
+        <div class="why-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3 class="why-card__title">30–60 min response</h3>
+        <p class="why-card__text">Live dispatch means the nearest engineer is already on their way before you've finished the call.</p>
+      </div>
+
+      <div class="why-card reveal">
+        <div class="why-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <h3 class="why-card__title">12-month guarantee</h3>
+        <p class="why-card__text">All parts and workmanship covered for a full year. If it fails, we come back and fix it — free.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ REVIEWS ═════════ -->
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="kicker">Reviews</span>
+      <h2 class="h2">Real callouts, real Mancunians.</h2>
+    </div>
+
+    <div class="reviews-summary reveal">
+      <div class="reviews-stars" aria-label="4.9 out of 5">
+        <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      </div>
+      <div>
+        <div class="reviews-stat">4.9</div>
+        <div class="reviews-stat-label">from 412 callouts</div>
+      </div>
+      <div class="reviews-divider"></div>
+      <div>
+        <div class="reviews-stat">98<small style="font-size:18px;">%</small></div>
+        <div class="reviews-stat-label">would call again</div>
+      </div>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review reveal">
+        <div class="review__stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="review__quote">"Locked out at 11pm after a long shift. James was here in 35 minutes, picked the lock without breaking anything, fair price. Honestly a lifesaver."</p>
+        <div class="review__author">
+          <div class="review__avatar">SM</div>
+          <div>
+            <div class="review__name">Sarah M.</div>
+            <div class="review__meta">Didsbury · House lockout</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review reveal">
+        <div class="review__stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="review__quote">"Keys locked in the van on a job site. Called LockDirect, the guy turned up 40 mins later, sorted it in 5. Saved my entire day."</p>
+        <div class="review__author">
+          <div class="review__avatar">DT</div>
+          <div>
+            <div class="review__name">David T.</div>
+            <div class="review__meta">Stockport · Van unlock</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review reveal">
+        <div class="review__stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="review__quote">"Burglary on a Sunday morning. They had someone on-site in under an hour, boarded the door, fitted new locks. Calm, professional, fair price."</p>
+        <div class="review__author">
+          <div class="review__avatar">PR</div>
+          <div>
+            <div class="review__name">Priya R.</div>
+            <div class="review__meta">Manchester M1 · Burglary repair</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review reveal">
+        <div class="review__stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="review__quote">"UPVC door stopped locking. Two other firms said I needed a whole new door. LockDirect fixed the gearbox in 30 mins for under a hundred quid."</p>
+        <div class="review__author">
+          <div class="review__avatar">AH</div>
+          <div>
+            <div class="review__name">Andrew H.</div>
+            <div class="review__meta">Oldham · UPVC repair</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review reveal">
+        <div class="review__stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="review__quote">"Lost the only key to our shop on a Saturday morning. They rekeyed the cylinder rather than replacing it. Saved us a fortune and we were trading by lunchtime."</p>
+        <div class="review__author">
+          <div class="review__avatar">FE</div>
+          <div>
+            <div class="review__name">Fatima E.</div>
+            <div class="review__meta">Cheetham Hill · Commercial</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review reveal">
+        <div class="review__stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="review__quote">"Couldn't get the front door to lock at midnight, three kids inside. They were here in 28 minutes, calm, friendly, fixed it on the spot."</p>
+        <div class="review__author">
+          <div class="review__avatar">JK</div>
+          <div>
+            <div class="review__name">James K.</div>
+            <div class="review__meta">Sale · Lock repair</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ FAQ ═════════ -->
+<section class="section section--soft" id="faq">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="kicker">FAQ</span>
+      <h2 class="h2">What everyone asks first.</h2>
+    </div>
+
+    <div class="faq-wrap">
+      <details class="faq-item reveal">
+        <summary>How much will it cost?</summary>
+        <div class="faq-item__body">
+          <p><strong>House lockouts from £79. Car lockouts from £89. Lock changes from £99.</strong> You'll get a fixed quote before any work starts — no surprise charges, no "while we're here" upsells. We never charge a call-out fee on top.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>How fast can you actually get to me?</summary>
+        <div class="faq-item__body">
+          <p>Our live average across Greater Manchester is <strong>30–60 minutes</strong>. City centre and inner suburbs (M1, M4, M14, M20, M21, Salford, Stockport) are usually closer to 30 minutes. Outer boroughs (Wigan, Bolton, Rochdale) can be 45–75 mins depending on time of day.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>Are you really open 24/7?</summary>
+        <div class="faq-item__body">
+          <p>Yes. Our dispatch line answers around the clock — Christmas Day, 3am Sunday, the lot. Night callouts are the same price as daytime within standard service hours; emergency premium only applies to specialist out-of-hours commercial jobs.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>Will you damage my door?</summary>
+        <div class="faq-item__body">
+          <p>Wherever possible, we use non-destructive entry — picking, bypassing, or rekeying. That's why we send trained locksmiths, not handymen. If a lock has to be drilled (rare — usually only on high-security or already-broken locks), you'll be told and quoted before we touch it.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>Can I trust the person you send?</summary>
+        <div class="faq-item__body">
+          <p>Every locksmith in our network is <strong>DBS-checked, identity-verified, and fully insured</strong>. They carry photo ID. If you're ever unsure, ask to see it before you let them in — a real locksmith will always show it without hesitation.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>What if I'm not 100% sure I'm locked out yet?</summary>
+        <div class="faq-item__body">
+          <p>Call us anyway. The advice is free. We often talk people through checking the obvious things first — second door, window, key still in the lock from inside — before we dispatch. We'd rather lose a callout than charge you for one you didn't need.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>What payment do you take?</summary>
+        <div class="faq-item__body">
+          <p>Card (contactless / chip & PIN), cash, or bank transfer. Payment is taken on completion, never up-front. VAT receipts available on request — useful if you're claiming through home insurance.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal">
+        <summary>Do you handle insurance claims?</summary>
+        <div class="faq-item__body">
+          <p>Yes. We provide itemised invoices and incident reports suitable for most UK home insurance claims, particularly burglary repairs. If your insurer needs to authorise the work first, just let our dispatcher know on the call.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ FINAL CTA ═════════ -->
+<section class="final-cta">
+  <div class="final-cta__inner">
+    <div class="live-status reveal">
+      <span class="live-dot"></span>
+      <span class="accent">Live</span>
+      <span class="sep">·</span>
+      Dispatching now
+    </div>
+
+    <h2 class="reveal">Still locked out?<br><span class="accent">Stop scrolling.</span></h2>
+
+    <a href="tel:07760587095" class="final-cta__phone reveal">07760 587095</a>
+
+    <p class="reveal">One tap. Real human picks up. Locksmith on the way before you hang up.</p>
+
+    <div class="final-cta__buttons reveal">
+      <a href="tel:07760587095" class="btn btn--primary btn--xl btn--pulse">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Now
+      </a>
+      <a href="https://wa.me/447760587095?text=Hi%20LockDirect%2C%20I%27m%20locked%20out" class="btn btn--whatsapp btn--xl" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A7.85 7.85 0 0 0 12.05 4a7.95 7.95 0 0 0-6.9 11.93L4 20l4.15-1.09a7.94 7.94 0 0 0 3.9 1h.01a7.95 7.95 0 0 0 7.95-7.94 7.9 7.9 0 0 0-2.41-5.65zM12.05 18.6a6.6 6.6 0 0 1-3.36-.92l-.24-.14-2.5.66.67-2.44-.16-.25a6.6 6.6 0 0 1 10.27-8.18 6.55 6.55 0 0 1 1.93 4.68 6.61 6.61 0 0 1-6.61 6.59zm3.62-4.94c-.2-.1-1.18-.58-1.36-.65-.18-.07-.31-.1-.45.1-.13.2-.51.65-.63.78-.12.13-.23.15-.43.05-.2-.1-.84-.31-1.6-.99a6 6 0 0 1-1.1-1.37c-.12-.2-.01-.31.09-.41.09-.09.2-.23.3-.35.1-.12.13-.2.2-.33.07-.13.03-.25-.02-.35-.05-.1-.45-1.09-.62-1.49-.16-.39-.33-.34-.45-.34l-.39-.01a.74.74 0 0 0-.54.25c-.18.2-.7.69-.7 1.67 0 .99.72 1.94.82 2.07.1.13 1.42 2.17 3.45 3.04 1.21.52 1.68.57 2.29.48.37-.06 1.18-.48 1.34-.95.17-.46.17-.86.12-.95-.05-.08-.18-.13-.38-.23z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════ FOOTER ═════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand-block">
+        <a href="#" class="brand">
+          <img src="assets/lockdirect-logo.png" alt="LockDirect" class="brand__logo">
+          <div class="brand__text">
+            <span class="brand__sub">Manchester · 24/7</span>
+          </div>
+        </a>
+        <p>Emergency locksmith dispatch across Greater Manchester. DBS-checked, fully insured, 12-month guarantee on all work.</p>
+        <a href="tel:07760587095" class="footer__phone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          07760 587095
+        </a>
+        <div class="footer__hours">Phones answered 24/7 · 365 days a year</div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">House Lockouts</a></li>
+          <li><a href="#services">Car &amp; Van Unlocks</a></li>
+          <li><a href="#services">Lock Changes</a></li>
+          <li><a href="#services">UPVC Repair</a></li>
+          <li><a href="#services">Burglary Repair</a></li>
+          <li><a href="#services">Safe Opening</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Areas</h4>
+        <ul>
+          <li><a href="areas/manchester.html">Manchester</a></li>
+          <li><a href="areas/salford.html">Salford</a></li>
+          <li><a href="areas/stockport.html">Stockport</a></li>
+          <li><a href="areas/oldham.html">Oldham</a></li>
+          <li><a href="areas/bolton.html">Bolton</a></li>
+          <li><a href="areas/bury.html">Bury</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#why">About</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#">Trade partners</a></li>
+          <li><a href="#">Insurance claims</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__legal">
+      <div>© 2026 LockDirect Dispatch Ltd. · Greater Manchester locksmith network.</div>
+      <div style="display:flex;gap:18px;">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═════════ STICKY MOBILE BAR ═════════ -->
+<div class="sticky-mobile" id="stickyMobile">
+  <a href="tel:07760587095" class="btn btn--primary">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call Now
+  </a>
+  <a href="https://wa.me/447760587095" class="btn btn--whatsapp" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A7.85 7.85 0 0 0 12.05 4a7.95 7.95 0 0 0-6.9 11.93L4 20l4.15-1.09a7.94 7.94 0 0 0 3.9 1h.01a7.95 7.95 0 0 0 7.95-7.94 7.9 7.9 0 0 0-2.41-5.65zM12.05 18.6a6.6 6.6 0 0 1-3.36-.92l-.24-.14-2.5.66.67-2.44-.16-.25a6.6 6.6 0 0 1 10.27-8.18 6.55 6.55 0 0 1 1.93 4.68 6.61 6.61 0 0 1-6.61 6.59zm3.62-4.94c-.2-.1-1.18-.58-1.36-.65-.18-.07-.31-.1-.45.1-.13.2-.51.65-.63.78-.12.13-.23.15-.43.05-.2-.1-.84-.31-1.6-.99a6 6 0 0 1-1.1-1.37c-.12-.2-.01-.31.09-.41.09-.09.2-.23.3-.35.1-.12.13-.2.2-.33.07-.13.03-.25-.02-.35-.05-.1-.45-1.09-.62-1.49-.16-.39-.33-.34-.45-.34l-.39-.01a.74.74 0 0 0-.54.25c-.18.2-.7.69-.7 1.67 0 .99.72 1.94.82 2.07.1.13 1.42 2.17 3.45 3.04 1.21.52 1.68.57 2.29.48.37-.06 1.18-.48 1.34-.95.17-.46.17-.86.12-.95-.05-.08-.18-.13-.38-.23z"/></svg>
+    WhatsApp
+  </a>
+</div>
+
+<!-- ═════════ MODAL: DISPATCH FLOW ═════════ -->
+<div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <button class="modal__close" id="modalClose" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+
+    <!-- Service tag (shown when a service is selected) -->
+    <div class="modal__service-tag" id="modalServiceTag" hidden>
+      <div class="modal__service-tag-icon" id="modalServiceIcon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1z"/></svg>
+      </div>
+      <div class="modal__service-tag-text">
+        <div class="modal__service-tag-kicker">Helping with</div>
+        <div class="modal__service-tag-label" id="modalServiceLabel">House / Flat</div>
+      </div>
+      <button type="button" class="modal__service-tag-edit" id="modalEditService">Change</button>
+    </div>
+
+    <div class="modal__head">
+      <span class="modal__kicker" id="modalKicker">Step 1 of 2</span>
+      <h3 class="modal__title" id="modalTitle">What's happened?</h3>
+      <p class="modal__sub" id="modalSub">Pick the closest match — we'll pass it to a real human.</p>
+    </div>
+
+    <div class="modal__progress" id="modalProgress" aria-hidden="true">
+      <span class="is-active"></span>
+      <span></span>
+    </div>
+
+    <!-- STEP 0: Service picker (only shown if user clicks "Change" or opens without a service) -->
+    <div class="step-pane" data-pane="0">
+      <div class="choice-grid">
+        <button type="button" class="choice" data-service-pick="house">
+          <div class="choice__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1z"/></svg></div>
+          <div>
+            <div class="choice__label">House / Flat</div>
+            <div class="choice__sub">Home, apartment, residential</div>
+          </div>
+        </button>
+        <button type="button" class="choice" data-service-pick="car">
+          <div class="choice__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 16H9m10 0h1a1 1 0 0 0 1-1v-3.34a3 3 0 0 0-.36-1.43l-1.16-2.16A4 4 0 0 0 15.96 6H8.04a4 4 0 0 0-3.52 2.07L3.36 10.23A3 3 0 0 0 3 11.66V15a1 1 0 0 0 1 1h1"/><circle cx="7" cy="16" r="2"/><circle cx="17" cy="16" r="2"/></svg></div>
+          <div>
+            <div class="choice__label">Car / Van</div>
+            <div class="choice__sub">Any vehicle, all makes</div>
+          </div>
+        </button>
+        <button type="button" class="choice" data-service-pick="commercial">
+          <div class="choice__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/></svg></div>
+          <div>
+            <div class="choice__label">Office / Shop</div>
+            <div class="choice__sub">Commercial premises</div>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <!-- STEP 1: Problem type (rendered dynamically based on service) -->
+    <div class="step-pane is-active" data-pane="1">
+      <div class="problem-grid" id="problemGrid"></div>
+    </div>
+
+    <!-- STEP 2: Contact details -->
+    <div class="step-pane" data-pane="2">
+      <form id="dispatchForm" novalidate>
+        <div class="field">
+          <label for="nameInput">Your name <span class="field__optional">(optional)</span></label>
+          <input id="nameInput" name="name" type="text" autocomplete="given-name" placeholder="e.g. Sarah">
+        </div>
+        <div class="field">
+          <label for="postcodeInput">Your postcode <span class="field__required">*</span></label>
+          <input id="postcodeInput" name="postcode" type="text" autocomplete="postal-code" placeholder="e.g. M1 4AE" autocapitalize="characters" required>
+          <div class="field__hint">So we know where to send help.</div>
+        </div>
+        <div class="field">
+          <label for="phoneInput">Mobile number <span class="field__required">*</span></label>
+          <input id="phoneInput" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="07700 900 000" required>
+          <div class="field__hint">We'll call back within 5 minutes.</div>
+        </div>
+
+        <!-- Honeypot for bot protection -->
+        <div class="honeypot" aria-hidden="true">
+          <label>Don't fill this in if you're human <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label>
+        </div>
+
+        <div class="form-error" id="formError" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <span id="formErrorText"></span>
+        </div>
+
+        <div class="modal__nav">
+          <button type="button" class="btn btn--ghost" data-action="back">Back</button>
+          <button type="submit" class="btn btn--primary" id="submitBtn">Send it through</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- STEP 3: Sending (brief) -->
+    <div class="step-pane" data-pane="3">
+      <div class="searching">
+        <div class="searching__animation">
+          <span class="searching__pulse"></span>
+          <span class="searching__pulse"></span>
+          <span class="searching__pulse"></span>
+          <div class="searching__core">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </div>
+        </div>
+        <div class="searching__title">Passing it to dispatch…</div>
+        <div class="searching__sub">Sending your details to the team.</div>
+      </div>
+    </div>
+
+    <!-- STEP 4: Confirmation -->
+    <div class="step-pane" data-pane="4">
+      <div class="confirm__hero">
+        <div class="confirm__check">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div class="confirm__title">Got it. Help is on the way.</div>
+        <div class="confirm__sub">A real human will call you back in under 5 minutes.</div>
+        <div class="confirm__eta">Average callback: 2&ndash;4 minutes</div>
+      </div>
+
+      <div class="confirm__details">
+        <div class="confirm__row">
+          <span class="confirm__row-label">Service</span>
+          <span class="confirm__row-value" id="summaryService">—</span>
+        </div>
+        <div class="confirm__row">
+          <span class="confirm__row-label">Problem</span>
+          <span class="confirm__row-value" id="summaryProblem">—</span>
+        </div>
+        <div class="confirm__row">
+          <span class="confirm__row-label">Postcode</span>
+          <span class="confirm__row-value" id="summaryPostcode">—</span>
+        </div>
+        <div class="confirm__row">
+          <span class="confirm__row-label">Callback to</span>
+          <span class="confirm__row-value" id="summaryPhone">—</span>
+        </div>
+      </div>
+
+      <p class="confirm__note">Don't want to wait? Skip the queue:</p>
+      <a href="tel:07760587095" class="btn btn--primary btn--large confirm__cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call 07760 587095
+      </a>
+    </div>
+
+    <!-- STEP 5: Error / fallback -->
+    <div class="step-pane" data-pane="5">
+      <div class="error-hero">
+        <div class="error-hero__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <div class="error-hero__title">Couldn't send through.</div>
+        <div class="error-hero__sub">Internet hiccup — easiest thing is to call us directly. We're answering right now.</div>
+      </div>
+      <a href="tel:07760587095" class="btn btn--primary btn--large confirm__cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call 07760 587095
+      </a>
+      <button type="button" class="btn btn--ghost" style="width:100%;margin-top:10px;" data-action="retry">Try again</button>
+    </div>
+
+  </div>
+</div>
+
+<script>
+// ─────────── Reveal on scroll ───────────
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('is-visible');
+      revealObserver.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+// ─────────── Sticky mobile bar ───────────
+const stickyMobile = document.getElementById('stickyMobile');
+const hero = document.querySelector('.hero');
+
+const stickyObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) {
+      stickyMobile.classList.add('is-visible');
+    } else {
+      stickyMobile.classList.remove('is-visible');
+    }
+  });
+}, { threshold: 0.3 });
+
+if (hero) stickyObserver.observe(hero);
+
+// ════════════════════════════════════════════════════════════════════
+// LEAD CAPTURE SETUP — READ THIS BEFORE GOING LIVE
+// ────────────────────────────────────────────────────────────────────
+// To actually receive leads from this form:
+//
+//   1. Go to https://web3forms.com (free, no credit card)
+//   2. Enter the email address you want leads sent to
+//   3. They'll email you a free Access Key — paste it below
+//   4. That's it. Submissions arrive as email within a few seconds.
+//
+// To get leads as SMS instead of (or in addition to) email:
+//
+//   Option A — Easy: turn on push email notifications on your phone.
+//             Most modern phones can show them instantly on the lock
+//             screen, basically the same as SMS.
+//   Option B — Webhook chain: in Web3Forms, set a webhook URL pointing
+//             to a Zapier or Make.com hook. Zapier → Twilio (or any
+//             SMS gateway) → SMS to your mobile. Costs ~£0.04/SMS.
+//   Option C — Replace the endpoint below with your own backend
+//             (Cloudflare Worker, Vercel function) that calls Twilio.
+//
+// While accessKey is left as the placeholder, the form will SIMULATE
+// success for testing — no email will actually be sent. The lead data
+// is logged to the browser console so you can verify it.
+// ════════════════════════════════════════════════════════════════════
+const DISPATCH_CONFIG = {
+  endpoint: 'https://api.web3forms.com/submit',
+  accessKey: 'YOUR_WEB3FORMS_ACCESS_KEY', // <── paste your Web3Forms access key here
+  businessPhone: '07760 587095'
+};
+
+// ─────────── Problem options per service ───────────
+const PROBLEM_OPTIONS = {
+  house: {
+    label: 'House / Flat',
+    iconPath: '<path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1z"/>',
+    problems: [
+      'Locked out — keys inside',
+      'Lost my keys',
+      'Keys stolen',
+      "Key won't turn / stuck",
+      'Snapped key in lock',
+      "Door won't lock properly",
+      'After a break-in',
+      'Something else'
+    ]
+  },
+  car: {
+    label: 'Car / Van',
+    iconPath: '<path d="M14 16H9m10 0h1a1 1 0 0 0 1-1v-3.34a3 3 0 0 0-.36-1.43l-1.16-2.16A4 4 0 0 0 15.96 6H8.04a4 4 0 0 0-3.52 2.07L3.36 10.23A3 3 0 0 0 3 11.66V15a1 1 0 0 0 1 1h1"/><circle cx="7" cy="16" r="2"/><circle cx="17" cy="16" r="2"/>',
+    problems: [
+      'Keys locked inside',
+      'Lost my keys',
+      'Keys stolen',
+      'Snapped key',
+      'Fob not working / dead',
+      'Boot stuck',
+      'Need replacement key',
+      'Something else'
+    ]
+  },
+  commercial: {
+    label: 'Office / Shop',
+    iconPath: '<path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/>',
+    problems: [
+      'Locked out of premises',
+      'Lost keys / fobs',
+      'Keys / fobs stolen',
+      'Lock / mechanism failed',
+      'After a break-in',
+      'Need lock change / rekey',
+      'Master key / access system',
+      'Something else'
+    ]
+  }
+};
+
+// ─────────── State + DOM ───────────
+const modalOverlay = document.getElementById('modalOverlay');
+const modalClose = document.getElementById('modalClose');
+const modalProgress = document.getElementById('modalProgress');
+const modalTitle = document.getElementById('modalTitle');
+const modalSub = document.getElementById('modalSub');
+const modalKicker = document.getElementById('modalKicker');
+const modalServiceTag = document.getElementById('modalServiceTag');
+const modalServiceIcon = document.getElementById('modalServiceIcon');
+const modalServiceLabel = document.getElementById('modalServiceLabel');
+const modalEditService = document.getElementById('modalEditService');
+const problemGrid = document.getElementById('problemGrid');
+const dispatchForm = document.getElementById('dispatchForm');
+const formError = document.getElementById('formError');
+const formErrorText = document.getElementById('formErrorText');
+const submitBtn = document.getElementById('submitBtn');
+
+let currentStep = 1;
+let dispatch = {
+  service: null,
+  serviceLabel: null,
+  problem: null,
+  name: '',
+  postcode: '',
+  phone: ''
+};
+
+function openModal(service) {
+  resetDispatch();
+  if (service && PROBLEM_OPTIONS[service]) {
+    setService(service);
+    renderProblems();
+    goToStep(1);
+  } else {
+    goToStep(0);
+  }
+  modalOverlay.classList.add('is-open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  modalOverlay.classList.remove('is-open');
+  document.body.style.overflow = '';
+  setTimeout(resetDispatch, 300);
+}
+
+function resetDispatch() {
+  dispatch = { service: null, serviceLabel: null, problem: null, name: '', postcode: '', phone: '' };
+  if (dispatchForm) dispatchForm.reset();
+  if (formError) formError.hidden = true;
+  if (submitBtn) submitBtn.disabled = false;
+  modalServiceTag.hidden = true;
+  problemGrid.innerHTML = '';
+}
+
+function setService(service) {
+  const opts = PROBLEM_OPTIONS[service];
+  if (!opts) return;
+  dispatch.service = service;
+  dispatch.serviceLabel = opts.label;
+  modalServiceLabel.textContent = opts.label;
+  modalServiceIcon.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${opts.iconPath}</svg>`;
+  modalServiceTag.hidden = false;
+}
+
+function renderProblems() {
+  const opts = PROBLEM_OPTIONS[dispatch.service];
+  if (!opts) return;
+  problemGrid.innerHTML = opts.problems.map(p => `
+    <button type="button" class="problem-choice" data-problem="${p}">
+      <span class="problem-choice__label">${p}</span>
+      <svg class="problem-choice__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </button>
+  `).join('');
+  problemGrid.querySelectorAll('.problem-choice').forEach(btn => {
+    btn.addEventListener('click', () => {
+      dispatch.problem = btn.dataset.problem;
+      goToStep(2);
+    });
+  });
+}
+
+function goToStep(n) {
+  currentStep = n;
+  document.querySelectorAll('.step-pane').forEach(p => {
+    p.classList.toggle('is-active', parseInt(p.dataset.pane, 10) === n);
+  });
+
+  // Progress (2 dots: problem → details). Hidden on step 0 and steps ≥ 3.
+  const dots = modalProgress.querySelectorAll('span');
+  dots.forEach(d => d.classList.remove('is-active', 'is-done'));
+  if (n === 1) {
+    dots[0].classList.add('is-active');
+    modalProgress.hidden = false;
+  } else if (n === 2) {
+    dots[0].classList.add('is-done');
+    dots[1].classList.add('is-active');
+    modalProgress.hidden = false;
+  } else {
+    modalProgress.hidden = true;
+  }
+
+  // Headers + service tag visibility
+  if (n === 0) {
+    modalKicker.textContent = 'Quick start';
+    modalTitle.textContent = 'What kind of help?';
+    modalSub.textContent = 'Pick a category, then tell us the specifics.';
+    modalServiceTag.hidden = true;
+  } else if (n === 1) {
+    modalKicker.textContent = 'Step 1 of 2';
+    modalTitle.textContent = "What's happened?";
+    modalSub.textContent = "Pick the closest match — we'll pass it to a real human.";
+    modalServiceTag.hidden = false;
+  } else if (n === 2) {
+    modalKicker.textContent = 'Step 2 of 2';
+    modalTitle.textContent = 'Where to reach you?';
+    modalSub.textContent = "We'll call back in under 5 minutes with a fixed price.";
+    modalServiceTag.hidden = false;
+  } else if (n === 3) {
+    modalKicker.textContent = 'Sending';
+    modalTitle.textContent = 'Passing it to dispatch…';
+    modalSub.textContent = 'Just a moment.';
+    modalServiceTag.hidden = true;
+  } else if (n === 4) {
+    modalKicker.textContent = 'Received';
+    modalTitle.textContent = "You're in the queue.";
+    modalSub.textContent = '';
+    modalServiceTag.hidden = true;
+  } else if (n === 5) {
+    modalKicker.textContent = 'Hmm';
+    modalTitle.textContent = 'Connection issue.';
+    modalSub.textContent = '';
+    modalServiceTag.hidden = true;
+  }
+
+  // Focus the first input on step 2 (helps mobile keyboards open quickly)
+  if (n === 2) setTimeout(() => {
+    const nameField = document.getElementById('nameInput');
+    if (nameField) nameField.focus();
+  }, 200);
+}
+
+// ─────────── Service card click handlers (hero) ───────────
+document.querySelectorAll('.service-card').forEach(card => {
+  card.addEventListener('click', () => {
+    openModal(card.dataset.service);
+  });
+});
+
+// ─────────── Step 0 → 1 (when picking service inside modal) ───────────
+document.querySelectorAll('[data-service-pick]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    setService(btn.dataset.servicePick);
+    renderProblems();
+    goToStep(1);
+  });
+});
+
+// ─────────── Change service (from tag) ───────────
+modalEditService.addEventListener('click', () => {
+  goToStep(0);
+});
+
+// ─────────── Back button (step 2 → 1) ───────────
+document.querySelectorAll('[data-action="back"]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (currentStep === 2) goToStep(1);
+  });
+});
+
+// ─────────── Retry button (from error state) ───────────
+document.addEventListener('click', (e) => {
+  if (e.target.closest('[data-action="retry"]')) {
+    goToStep(2);
+  }
+});
+
+// ─────────── Form submission ───────────
+dispatchForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  formError.hidden = true;
+
+  const name = document.getElementById('nameInput').value.trim();
+  const postcode = document.getElementById('postcodeInput').value.trim().toUpperCase();
+  const phone = document.getElementById('phoneInput').value.trim();
+
+  if (!postcode) {
+    formErrorText.textContent = 'Please enter a postcode.';
+    formError.hidden = false;
+    document.getElementById('postcodeInput').focus();
+    return;
+  }
+  if (!phone || phone.replace(/\D/g, '').length < 9) {
+    formErrorText.textContent = 'Please enter a valid mobile number.';
+    formError.hidden = false;
+    document.getElementById('phoneInput').focus();
+    return;
+  }
+
+  dispatch.name = name || '(not given)';
+  dispatch.postcode = postcode;
+  dispatch.phone = phone;
+
+  submitBtn.disabled = true;
+  goToStep(3);
+
+  // Populate summary fields ahead of confirmation
+  document.getElementById('summaryService').textContent = dispatch.serviceLabel;
+  document.getElementById('summaryProblem').textContent = dispatch.problem;
+  document.getElementById('summaryPostcode').textContent = dispatch.postcode;
+  document.getElementById('summaryPhone').textContent = dispatch.phone;
+
+  // If access key not configured, simulate success (for local testing)
+  if (DISPATCH_CONFIG.accessKey === 'YOUR_WEB3FORMS_ACCESS_KEY') {
+    console.group('%c[LockDirect] Lead captured (SIMULATED — set Web3Forms key to send for real)', 'color:#E11D2A;font-weight:bold');
+    console.log('Service:', dispatch.serviceLabel);
+    console.log('Problem:', dispatch.problem);
+    console.log('Name:', dispatch.name);
+    console.log('Postcode:', dispatch.postcode);
+    console.log('Phone:', dispatch.phone);
+    console.log('Time:', new Date().toLocaleString('en-GB', { timeZone: 'Europe/London' }));
+    console.groupEnd();
+    setTimeout(() => goToStep(4), 1400);
+    return;
+  }
+
+  try {
+    const formData = new FormData();
+    formData.append('access_key', DISPATCH_CONFIG.accessKey);
+    formData.append('subject', `🚨 LockDirect Lead — ${dispatch.serviceLabel} — ${dispatch.problem}`);
+    formData.append('from_name', 'LockDirect Website');
+    formData.append('Service', dispatch.serviceLabel);
+    formData.append('Problem', dispatch.problem);
+    formData.append('Name', dispatch.name);
+    formData.append('Postcode', dispatch.postcode);
+    formData.append('Phone', dispatch.phone);
+    formData.append('Time', new Date().toLocaleString('en-GB', { timeZone: 'Europe/London' }));
+    formData.append('Page', window.location.href);
+    formData.append('botcheck', document.querySelector('[name="botcheck"]').checked ? '1' : '');
+
+    const response = await fetch(DISPATCH_CONFIG.endpoint, {
+      method: 'POST',
+      body: formData
+    });
+    const data = await response.json();
+
+    if (data.success) {
+      setTimeout(() => goToStep(4), 800);
+    } else {
+      console.error('[LockDirect] Web3Forms returned an error:', data);
+      setTimeout(() => goToStep(5), 600);
+    }
+  } catch (err) {
+    console.error('[LockDirect] Submission failed:', err);
+    setTimeout(() => goToStep(5), 600);
+  }
+});
+
+// ─────────── Postcode formatter ───────────
+document.getElementById('postcodeInput').addEventListener('input', (e) => {
+  e.target.value = e.target.value.toUpperCase();
+});
+
+// ─────────── Close handlers ───────────
+modalClose.addEventListener('click', closeModal);
+modalOverlay.addEventListener('click', (e) => { if (e.target === modalOverlay) closeModal(); });
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && modalOverlay.classList.contains('is-open')) closeModal();
+});
+</script>
+
+</body>
+</html>

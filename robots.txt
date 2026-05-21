@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lockaid.co.uk/sitemap.xml
