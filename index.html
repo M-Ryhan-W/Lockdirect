@@ -3282,6 +3282,8 @@ input, textarea, select { font: inherit; color: inherit; }
           <span id="formErrorText"></span>
         </div>
 
+        <div class="h-captcha" data-captcha="true" style="margin: 14px 0;"></div>
+
         <div class="modal__nav">
           <button type="button" class="btn btn--ghost" data-action="back">Back</button>
           <button type="submit" class="btn btn--primary" id="submitBtn">Send it through</button>
@@ -3520,6 +3522,9 @@ function resetDispatch() {
   if (submitBtn) submitBtn.disabled = false;
   modalServiceTag.hidden = true;
   problemGrid.innerHTML = '';
+  if (window.hcaptcha && typeof window.hcaptcha.reset === 'function') {
+    try { window.hcaptcha.reset(); } catch (_) {}
+  }
 }
 
 function setService(service) {
@@ -3666,6 +3671,16 @@ dispatchForm.addEventListener('submit', async (e) => {
     return;
   }
 
+  // hCaptcha check — only enforced once a real access key is configured,
+  // so local "simulate" testing still works without internet / captcha.
+  const captchaField = document.querySelector('[name="h-captcha-response"]');
+  const captchaToken = captchaField ? captchaField.value : '';
+  if (DISPATCH_CONFIG.accessKey !== 'YOUR_WEB3FORMS_ACCESS_KEY' && !captchaToken) {
+    formErrorText.textContent = 'Please tick the "I am human" box so we know you\'re not a bot.';
+    formError.hidden = false;
+    return;
+  }
+
   dispatch.name = name || '(not given)';
   dispatch.postcode = postcode;
   dispatch.phone = phone;
@@ -3706,6 +3721,7 @@ dispatchForm.addEventListener('submit', async (e) => {
     formData.append('Time', new Date().toLocaleString('en-GB', { timeZone: 'Europe/London' }));
     formData.append('Page', window.location.href);
     formData.append('botcheck', document.querySelector('[name="botcheck"]').checked ? '1' : '');
+    formData.append('h-captcha-response', captchaToken);
 
     const response = await fetch(DISPATCH_CONFIG.endpoint, {
       method: 'POST',
@@ -3737,6 +3753,9 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && modalOverlay.classList.contains('is-open')) closeModal();
 });
 </script>
+
+<!-- Web3Forms hCaptcha auto-loader -->
+<script src="https://web3forms.com/client/script.js" async defer></script>
 
 </body>
 </html>
