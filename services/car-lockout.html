@@ -108,8 +108,14 @@ svg { display: block; }
 .service-hero h1 .accent { color: var(--red); }
 .service-hero__sub { font-size: clamp(16px, 2.2vw, 19px); color: var(--text); max-width: 540px; margin-bottom: 32px; }
 
-.service-hero__ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 36px; }
+.service-hero__ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
 @media (max-width: 480px) { .service-hero__ctas { flex-direction: column; align-items: stretch; } .service-hero__ctas .btn { width: 100%; } }
+
+.email-link { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; font-size: 14px; font-weight: 600; color: var(--text-soft); border-radius: var(--r-full); background: transparent; transition: color 0.2s, background 0.2s; margin-bottom: 22px; }
+.email-link:hover { color: var(--ink); background: var(--bg-soft); }
+.email-link svg { width: 16px; height: 16px; }
+.email-link--dark { color: rgba(255,255,255,0.65); margin-top: 18px; }
+.email-link--dark:hover { color: white; background: rgba(255,255,255,0.08); }
 
 .bullets { display: flex; flex-direction: column; gap: 12px; }
 .bullet { display: flex; gap: 12px; align-items: flex-start; }
@@ -269,6 +275,11 @@ svg { display: block; }
             WhatsApp
           </a>
         </div>
+
+        <a href="mailto:ryhan1998@gmail.com?subject=Car%20lockout%20enquiry" class="email-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Or email us — for non-urgent enquiries
+        </a>
 
         <div class="bullets">
           <div class="bullet">
@@ -512,6 +523,12 @@ svg { display: block; }
       <a href="https://wa.me/447760587095" class="btn btn--whatsapp btn--xl" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A7.85 7.85 0 0 0 12.05 4a7.95 7.95 0 0 0-6.9 11.93L4 20l4.15-1.09a7.94 7.94 0 0 0 3.9 1h.01a7.95 7.95 0 0 0 7.95-7.94 7.9 7.9 0 0 0-2.41-5.65z"/></svg>
         WhatsApp
+      </a>
+    </div>
+    <div>
+      <a href="mailto:ryhan1998@gmail.com?subject=Car%20lockout%20enquiry" class="email-link email-link--dark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Or email us — for non-urgent enquiries
       </a>
     </div>
   </div>

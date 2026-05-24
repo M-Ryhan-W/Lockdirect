@@ -255,8 +255,14 @@ svg { display: block; }
 .area-hero h1 .accent { color: var(--red); }
 .area-hero__sub { font-size: clamp(16px, 2.2vw, 19px); color: var(--text); max-width: 560px; margin-bottom: 32px; }
 
-.area-hero__ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 28px; }
+.area-hero__ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
 @media (max-width: 480px) { .area-hero__ctas { flex-direction: column; align-items: stretch; } .area-hero__ctas .btn { width: 100%; } }
+
+.email-link { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; font-size: 14px; font-weight: 600; color: var(--text-soft); border-radius: var(--r-full); background: transparent; transition: color 0.2s, background 0.2s; margin-bottom: 22px; }
+.email-link:hover { color: var(--ink); background: var(--bg-soft); }
+.email-link svg { width: 16px; height: 16px; }
+.email-link--dark { color: rgba(255,255,255,0.65); margin-top: 18px; }
+.email-link--dark:hover { color: white; background: rgba(255,255,255,0.08); }
 
 .area-hero__trust { display: flex; flex-wrap: wrap; gap: 14px 22px; }
 .trust-item { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: var(--ink-soft); }
@@ -408,6 +414,11 @@ svg { display: block; }
             WhatsApp
           </a>
         </div>
+
+        <a href="mailto:ryhan1998@gmail.com?subject=Locksmith%20enquiry%20%E2%80%94%20$name_short" class="email-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Or email us — for non-urgent enquiries
+        </a>
 
         <div class="area-hero__trust">
           <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>DBS Checked</div>
@@ -579,13 +590,19 @@ $streets_html
         WhatsApp
       </a>
     </div>
+    <div>
+      <a href="mailto:ryhan1998@gmail.com?subject=Locksmith%20enquiry%20%E2%80%94%20$name_short" class="email-link email-link--dark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Or email us — for non-urgent enquiries
+      </a>
+    </div>
   </div>
 </section>
 
 <footer class="footer-mini">
   <div class="container">
     <div class="footer-mini__row">
-      <a href="../index.html">Home</a><a href="../index.html#services">Services</a><a href="../index.html#areas">All Areas</a><a href="../index.html#faq">FAQ</a><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a>
+      <a href="../index.html">Home</a><a href="../index.html#services">Services</a><a href="../index.html#areas">All Areas</a><a href="../index.html#faq">FAQ</a><a href="mailto:ryhan1998@gmail.com">Email</a><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a>
     </div>
     <div class="footer-mini__row" style="margin-top:14px;">© 2026 LockDirect Dispatch Ltd. · Locksmith $name</div>
   </div>
