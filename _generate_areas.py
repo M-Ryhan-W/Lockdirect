@@ -6,12 +6,16 @@ OpenStreetMap embed centred on the area, and localised copy.
 Re-run after editing AREAS or TEMPLATE to regenerate.
 """
 
+from datetime import date
 from pathlib import Path
 from string import Template
 
 ROOT = Path(__file__).parent
 AREAS_DIR = ROOT / "areas"
+SERVICES_DIR = ROOT / "services"
 AREAS_DIR.mkdir(exist_ok=True)
+
+SITE_URL = "https://lockdirect.co.uk"
 
 AREAS = [
     {"slug": "manchester", "name": "Manchester", "name_short": "Manchester",
@@ -159,24 +163,90 @@ def bbox(lat, lng):
 TEMPLATE_STR = r'''<!DOCTYPE html>
 <html lang="en-GB">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6XH4X9V6SV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6XH4X9V6SV');
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#E11D2A">
+<link rel="canonical" href="https://lockdirect.co.uk/areas/$slug">
 <title>Locksmith $name — 24/7 Emergency · From £79 | LockDirect</title>
 <meta name="description" content="Locked out in $name? LockDirect dispatches DBS-checked locksmiths across $postcodes. $eta-min average response. No call-out fee. Call 07760 587095.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="geo.region" content="GB-MAN">
+<meta name="geo.placename" content="$name">
+<meta name="geo.position" content="$lat;$lng">
+<meta name="ICBM" content="$lat, $lng">
+
 <meta property="og:title" content="Locksmith $name — 24/7 | LockDirect">
 <meta property="og:description" content="$name locksmith dispatch. $eta-min average response. Call 07760 587095.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lockdirect.co.uk/areas/$slug">
+<meta property="og:site_name" content="LockDirect">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://lockdirect.co.uk/assets/lockdirect-logo.png">
+<meta property="og:image:alt" content="LockDirect — 24/7 emergency locksmith $name">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Locksmith $name — 24/7 | LockDirect">
+<meta name="twitter:description" content="$name locksmith dispatch. $eta-min average response. Call 07760 587095.">
+<meta name="twitter:image" content="https://lockdirect.co.uk/assets/lockdirect-logo.png">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "Locksmith",
+  "@id": "https://lockdirect.co.uk/areas/$slug#business",
   "name": "LockDirect $name",
+  "url": "https://lockdirect.co.uk/areas/$slug",
+  "logo": "https://lockdirect.co.uk/assets/lockdirect-logo.png",
+  "image": "https://lockdirect.co.uk/assets/lockdirect-logo.png",
+  "description": "24/7 emergency locksmith in $name covering $postcodes. DBS-checked engineers, $eta-min average response, no call-out fee.",
   "telephone": "+447760587095",
+  "email": "ryhan1998@gmail.com",
   "priceRange": "££",
+  "currenciesAccepted": "GBP",
+  "paymentAccepted": "Cash, Credit Card, Debit Card, Bank Transfer",
   "address": {"@type": "PostalAddress","addressLocality": "$name","addressRegion": "Greater Manchester","addressCountry": "GB"},
   "geo": {"@type":"GeoCoordinates","latitude":$lat,"longitude":$lng},
-  "openingHoursSpecification": [{"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens": "00:00","closes": "23:59"}]
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {"@type":"GeoCoordinates","latitude":$lat,"longitude":$lng},
+    "geoRadius": 8000
+  },
+  "areaServed": {"@type":"City","name":"$name"},
+  "openingHoursSpecification": [{"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens": "00:00","closes": "23:59"}],
+  "knowsLanguage": "en-GB",
+  "parentOrganization": {"@id":"https://lockdirect.co.uk/#business"},
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Locksmith services in $name",
+    "itemListElement": [
+      {"@type":"Offer","priceCurrency":"GBP","price":"79","itemOffered":{"@type":"Service","name":"Emergency House Lockout in $name","areaServed":{"@type":"City","name":"$name"}}},
+      {"@type":"Offer","priceCurrency":"GBP","price":"89","itemOffered":{"@type":"Service","name":"Car & Van Unlock in $name","areaServed":{"@type":"City","name":"$name"}}},
+      {"@type":"Offer","priceCurrency":"GBP","price":"99","itemOffered":{"@type":"Service","name":"Lock Change in $name","areaServed":{"@type":"City","name":"$name"}}},
+      {"@type":"Offer","priceCurrency":"GBP","price":"89","itemOffered":{"@type":"Service","name":"UPVC Door Repair in $name","areaServed":{"@type":"City","name":"$name"}}}
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://lockdirect.co.uk/"},
+    {"@type":"ListItem","position":2,"name":"Areas","item":"https://lockdirect.co.uk/#areas"},
+    {"@type":"ListItem","position":3,"name":"$name","item":"https://lockdirect.co.uk/areas/$slug"}
+  ]
 }
 </script>
 
@@ -645,3 +715,49 @@ for area in AREAS:
     print(f"✓ {out_path.relative_to(ROOT)}")
 
 print(f"\nGenerated {len(AREAS)} area pages.")
+
+
+# ── Sitemap regeneration ──────────────────────────────────────────────
+# Walks the repo for indexable HTML and writes sitemap.xml with today's
+# lastmod. Higher priority for the homepage and area pages (the pages
+# users land on from search); legal pages excluded.
+
+EXCLUDE = {"cookies.html", "privacy.html", "terms.html"}
+TODAY = date.today().isoformat()
+
+def loc_for(rel_path: str) -> str:
+    # Drop "index.html" → site root; drop ".html" suffix for clean URLs.
+    if rel_path == "index.html":
+        return f"{SITE_URL}/"
+    return f"{SITE_URL}/{rel_path[:-5] if rel_path.endswith('.html') else rel_path}"
+
+entries: list[tuple[str, str, str]] = []  # (loc, changefreq, priority)
+
+# Homepage
+entries.append((loc_for("index.html"), "weekly", "1.0"))
+
+# Service pages (every .html file in /services)
+if SERVICES_DIR.exists():
+    for svc in sorted(SERVICES_DIR.glob("*.html")):
+        entries.append((loc_for(f"services/{svc.name}"), "monthly", "0.9"))
+
+# Area pages (driven by AREAS so order is deterministic)
+for area in AREAS:
+    entries.append((loc_for(f"areas/{area['slug']}.html"), "monthly", "0.8"))
+
+sitemap_lines = ['<?xml version="1.0" encoding="UTF-8"?>',
+                 '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+for loc, changefreq, priority in entries:
+    sitemap_lines.extend([
+        "  <url>",
+        f"    <loc>{loc}</loc>",
+        f"    <lastmod>{TODAY}</lastmod>",
+        f"    <changefreq>{changefreq}</changefreq>",
+        f"    <priority>{priority}</priority>",
+        "  </url>",
+    ])
+sitemap_lines.append("</urlset>")
+sitemap_lines.append("")
+
+(ROOT / "sitemap.xml").write_text("\n".join(sitemap_lines), encoding="utf-8")
+print(f"✓ sitemap.xml ({len(entries)} URLs, lastmod {TODAY})")
